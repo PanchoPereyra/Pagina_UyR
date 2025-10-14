@@ -1,0 +1,8 @@
+/* ACA SE DECLARAN CARACTERISTICAS GLOBALES */
+@import "tailwindcss";
+body{
+  margin: 0;
+  background-color: #f4f0eb;
+  /* color: orange */
+}
+
