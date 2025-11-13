@@ -8,10 +8,6 @@ function Efemerides() {
             <div class="max-w-5xl mx-auto px-4 text-center">
 
                 {/* TITULO Y DESCRIPCION */}
-                {/* <h2 class="text-3xl font-bold  mb-2">Efemérides Sindicales</h2>
-                <p class="text-gray-600 mb-12">
-                    Fechas que marcan nuestra historia y fortalecen nuestra identidad como trabajadores organizados
-                </p> */}
 
                 {/* GRID EFEMERIDES */}
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
