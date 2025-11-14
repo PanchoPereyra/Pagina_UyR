@@ -1,16 +1,44 @@
-# React + Vite
+# Unión y Renovación – Sitio Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio institucional desarrollado con React, Vite, TailwindCSS y React Router.
 
-Currently, two official plugins are available:
+Este proyecto corresponde a la creación del sitio web informativo del sindicato Unión y Renovación, incluyendo novedades, efemérides, galería de imágenes y páginas internas con detalles de cada noticia.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**React** – Librería principal para la interfaz  
+**Vite** – Empaquetador rápido para desarrollo y build  
+**TailwindCSS** – Framework CSS para estilos  
+**React Router DOM** – Navegación entre páginas  
+**Netlify** – Hosting y deploy  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👨‍💻 Sobre mí (Autor del proyecto)
+
+Proyecto desarrollado por **Juan Francisco Pereyra**, con el objetivo de mejorar mis habilidades en:
+
+- Desarrollo frontend con React  
+- Componentización y organización de código  
+- Diseño responsive con TailwindCSS  
+- Manejo de rutas y navegación con React Router  
+- Deploy profesional usando Netlify  
+
+### 🚀 Motivación del proyecto
+
+Este proyecto nació como una práctica real para construir una web institucional completa, trabajando con:
+
+- Rutas dinámicas  
+- Componentes reutilizables  
+- Secciones como efemérides, novedades y galería  
+- Diseño responsive adaptado a móviles, tablets y desktop  
+
+---
+
+## 📫 Contacto
+
+- GitHub: https://github.com/PanchoPereyra 
+- LinkedIn: www.linkedin.com/in/juan-francisco-pereyra-596086210
+- Email: juanfcopereyra@gmail.com  
