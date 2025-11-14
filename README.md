@@ -16,7 +16,7 @@ Este proyecto corresponde a la creación del sitio web informativo del sindicato
 
 ---
 
-## 👨‍💻 Sobre mí (Autor del proyecto)
+## Sobre mí (Autor del proyecto)
 
 Proyecto desarrollado por **Juan Francisco Pereyra**, con el objetivo de mejorar mis habilidades en:
 
@@ -26,7 +26,7 @@ Proyecto desarrollado por **Juan Francisco Pereyra**, con el objetivo de mejorar
 - Manejo de rutas y navegación con React Router  
 - Deploy profesional usando Netlify  
 
-### 🚀 Motivación del proyecto
+### Motivación del proyecto
 
 Este proyecto nació como una práctica real para construir una web institucional completa, trabajando con:
 
@@ -37,7 +37,7 @@ Este proyecto nació como una práctica real para construir una web instituciona
 
 ---
 
-## 📫 Contacto
+## Contacto
 
 - GitHub: https://github.com/PanchoPereyra 
 - LinkedIn: www.linkedin.com/in/juan-francisco-pereyra-596086210
