@@ -3,7 +3,7 @@
 
 //FUNCION
 function Noticias1() {
-return (
+    return (
         <div className="max-w-4xl mx-auto px-5 py-12">
 
             {/* Fecha */}
@@ -11,7 +11,7 @@ return (
 
             {/* Título */}
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Acuerdo Salarial 2024: Un avance histórico para los trabajadores
+                Noticia 1
             </h1>
 
             {/* Imagen opcional */}
@@ -24,20 +24,20 @@ return (
             {/* Contenido */}
             <div className="text-gray-700 leading-relaxed space-y-4 text-lg">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ex blanditiis harum veritatis, ratione illo voluptates, 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ex blanditiis harum veritatis, ratione illo voluptates,
                     debitis earum aspernatur eveniet beatae incidunt.
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis tempora sed magnam, sint eligendi velit. Ab vitae rerum similique placeat deserunt necessitatibus dolore hic magni, perspiciatis nihil veritatis mollitia in.
                 </p>
 
                 <p>
-                    Sequi distinctio obcaecati, quis fuga, aspernatur numquam 
-                    tempora voluptas tenetur cum, blanditiis libero? Rerum 
+                    Sequi distinctio obcaecati, quis fuga, aspernatur numquam
+                    tempora voluptas tenetur cum, blanditiis libero? Rerum
                     quibusdam iure ea? Suscipit illum repellendus doloribus earum.
                 </p>
 
                 <p>
-                    Este acuerdo representa un paso fundamental para garantizar 
+                    Este acuerdo representa un paso fundamental para garantizar
                     mejores condiciones laborales y mayor estabilidad económica.
                 </p>
             </div>
