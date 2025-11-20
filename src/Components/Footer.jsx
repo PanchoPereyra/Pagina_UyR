@@ -22,8 +22,8 @@ function Footer() {
             </div>
           </div> */}
         <div class="text-center md:text-left md:w-1/2">
-          <h2 class="text-xl font-semibold mb-3">Unión y Renovación</h2>
-          <p class="text-sm leading-relaxed">
+          <h2 class="text-xl font-semibold mb-3 text-gray-950">Unión y Renovación</h2>
+          <p class="text-sm leading-relaxed text-gray-950">
             Unidos por la defensa de los derechos laborales y el bienestar de todos los trabajadores.
             Juntos construimos un futuro más justo.
           </p>
@@ -60,7 +60,7 @@ function Footer() {
         {/* </div> */}
         {/* </div> */}
         <div className="text-center md:w-1/2 flex flex-col items-center md:items-end">
-          <h2 className="text-xl font-semibold mb-3">Seguinos</h2>
+          <h2 className="text-xl font-semibold mb-3 text-gray-950">Seguinos</h2>
 
           {/* FACEBOOK */}
           <div className="flex justify-center md:justify-end gap-4">
@@ -90,8 +90,8 @@ function Footer() {
         <div className="text-center text-sm ">
           © 2025 Todos los derechos reservados.
         </div> */}
-      <hr class="border-white/40 mx-6" />
-      <div class="text-center text-xs py-4 text-white/90">
+      <hr class="border-gray-950 mx-6" />
+      <div class="text-center text-xs py-4 text-gray-950">
         © 2025 Todos los derechos reservados.
       </div>
 

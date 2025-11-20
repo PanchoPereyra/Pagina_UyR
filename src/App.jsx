@@ -23,6 +23,8 @@ import Noticias3 from "./pages/Noticias3"
 import Noticias4 from "./pages/Noticias4"
 import Home from "./pages/Home";
 import EnConstruccion from "./pages/EnConstruccion"
+import ObraSocial from "./pages/ObraSocial"
+
 
 
 
@@ -46,6 +48,7 @@ function App() {
         <Route path="/noticia4" element={<Noticias4 />} />
         <Route path="/enconstruccion" element={<EnConstruccion />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/obrasocial" element={<ObraSocial />} />
       </Routes>
 
       {/* <Hero /> */}
