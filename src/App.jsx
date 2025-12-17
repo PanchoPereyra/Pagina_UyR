@@ -8,7 +8,7 @@
 
 import Efemerides from "./Components/Efemerides"
 import Footer from "./Components/Footer"
-import Galeria from "./Components/Galeria"
+//import Galeria from "./Components/Galeria"
 
 import Hero from "./Components/Hero"
 import Eslogan from "./Components/Eslogan"
@@ -24,6 +24,8 @@ import Noticias4 from "./pages/Noticias4"
 import Home from "./pages/Home";
 import EnConstruccion from "./pages/EnConstruccion"
 import ObraSocial from "./pages/ObraSocial"
+import Galeria from "./pages/Galeria"
+import Imagenes1 from "./pages/Imagenes1"
 
 
 
@@ -49,6 +51,8 @@ function App() {
         <Route path="/enconstruccion" element={<EnConstruccion />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/obrasocial" element={<ObraSocial />} />
+        <Route path="/galeria" element={<Galeria/>}/>
+        <Route path="/imagenes1" element={<Imagenes1/>}/>
       </Routes>
 
       {/* <Hero /> */}

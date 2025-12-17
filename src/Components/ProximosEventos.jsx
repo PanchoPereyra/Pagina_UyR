@@ -10,8 +10,8 @@ function ProximosEventos() {
                 <div class="flex flex-col md:flex-row justify-center items-center md:items-start text-center md:text-left gap-10">
                     <div>
                         {/* <h2 class="text-black text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none"> */}
-                        <h2 class="text-black text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none">
-                            Próximo <br /> Evento
+                        <h2 class="flex justify-center items-center text-center text-black text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none h-32">
+                            Eventos
                         </h2>
                     </div>
 
@@ -21,7 +21,7 @@ function ProximosEventos() {
                         </p>
                     </div>
                 </div>
-                <a href="/enconstruccion" class="text-black hover:underline text-sm font-medium ">Leer más →</a>
+                <a href="/galeria" class="text-black hover:underline text-sm font-medium ">Leer más →</a>
             </div>
         </section>
     )
