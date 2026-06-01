@@ -45,6 +45,18 @@ function Hero() {
                 </div>
 
             </div>
+
+            {/* Imagen debajo */}
+            <div className="flex justify-center items-center w-full md:w-2/3 px-4 
+                text-center md:text-left">
+                    <p className="text-black text-4xl sm:text-5xl md:text-6xl lg:text-8xl 
+                  font-extrabold leading-none">
+
+                        <span className="block mt-4">
+                            Aca podría ir la imagen de la lista.
+                        </span>
+                    </p>
+                </div>
         </section>
     )
 }

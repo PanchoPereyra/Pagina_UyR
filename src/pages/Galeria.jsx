@@ -39,8 +39,11 @@ function Galeria() {
                     Día del Trabajador
                 </span>
               </div>
-              {/* Si quieres botón en esta también, descomenta abajo */}
-              {/* <div><a href="/imagenes2" className="text-black font-bold text-sm">Ver más →</a></div> */}
+              <div>
+                <a href="/imagenes2" className="text-black hover:text-white transition-colors hover:underline text-sm font-bold flex items-center gap-1">
+                  Ver más <span>→</span>
+                </a>
+              </div>
             </div>
 
             {/* TARJETA 3 */}
@@ -50,6 +53,11 @@ function Galeria() {
                     Capacitación laboral
                  </span>
                </div>
+               <div>
+                <a href="/imagenes1" className="text-black hover:text-white transition-colors hover:underline text-sm font-bold flex items-center gap-1">
+                  Ver más <span>→</span>
+                </a>
+              </div>
             </div>
 
             {/* Las demás tarjetas comentadas... */}

@@ -26,6 +26,7 @@ import EnConstruccion from "./pages/EnConstruccion"
 import ObraSocial from "./pages/ObraSocial"
 import Galeria from "./pages/Galeria"
 import Imagenes1 from "./pages/Imagenes1"
+import Imagenes2 from "./pages/Imagenes2"
 
 
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/obrasocial" element={<ObraSocial />} />
         <Route path="/galeria" element={<Galeria/>}/>
         <Route path="/imagenes1" element={<Imagenes1/>}/>
+        <Route path="/imagenes2" element={<Imagenes2/>}/>
       </Routes>
 
       {/* <Hero /> */}
