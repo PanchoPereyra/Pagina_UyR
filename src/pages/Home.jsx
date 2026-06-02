@@ -1,5 +1,6 @@
 //IMPORT
 import Hero from "../Components/Hero"
+import Lista from "../Components/Lista"
 import Header from "../Components/Header"
 import Eslogan from "../Components/Eslogan"
 import Novedades from "../Components/Novedades"
@@ -12,12 +13,14 @@ function Home() {
     return (
         <div>
             <Hero />
+            <Lista />
             <Header />
             <Eslogan />
             <Novedades/>
             <Efemerides />
             <ProximosEventos/>
             {/* <Galeria /> */}
+
         </div>
     )
 }

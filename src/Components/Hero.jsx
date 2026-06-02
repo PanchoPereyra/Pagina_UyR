@@ -21,7 +21,7 @@ function Hero() {
 
                 </div>
 
-                {/* <div className="flex justify-center items-start w-full md:w-2/3 px-4 text-left">
+                <div className="flex justify-center items-start w-full md:w-2/3 px-4 text-left">
                     <p className="text-black text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold leading-none">
                         <span className="text-7xl sm:text-8xl md:text-[10rem] lg:text-[14rem] block -mt-10">
                             Todos
@@ -30,33 +30,11 @@ function Hero() {
                             por el mismo camino.
                         </span>
                     </p>
-                </div> */}
-                <div className="flex justify-center items-center w-full md:w-2/3 px-4 
-                text-center md:text-left">
-                    <p className="text-black text-4xl sm:text-5xl md:text-6xl lg:text-8xl 
-                  font-extrabold leading-none">
-                        <span className="text-7xl sm:text-8xl md:text-[10rem] lg:text-[14rem] block -mt-10">
-                            Todos
-                        </span>
-                        <span className="block mt-4">
-                            por el mismo camino.
-                        </span>
-                    </p>
                 </div>
-
+                
             </div>
 
-            {/* Imagen debajo */}
-            <div className="flex justify-center items-center w-full md:w-2/3 px-4 
-                text-center md:text-left">
-                    <p className="text-black text-4xl sm:text-5xl md:text-6xl lg:text-8xl 
-                  font-extrabold leading-none">
-
-                        <span className="block mt-4">
-                            Aca podría ir la imagen de la lista.
-                        </span>
-                    </p>
-                </div>
+            
         </section>
     )
 }

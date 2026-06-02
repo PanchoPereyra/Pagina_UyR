@@ -13,6 +13,7 @@ function BarraNavegacion() {
                 <a href="/novedades" className="">Novedades</a>
                 <a href="/galeria" className="">Eventos</a>
                 <a href="/enconstruccion" className="">Efemérides</a>
+                <a href="/lista" className="">Lista</a>
                 <a href="/obrasocial" className="">Obra Social</a>
                 {/* <a href="#" className="hover:text-blue-600">Galería</a> */}
 

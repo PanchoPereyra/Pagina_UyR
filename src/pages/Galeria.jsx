@@ -32,7 +32,7 @@ function Galeria() {
               </div>
             </div>
 
-            {/* TARJETA 2 (Con la misma estructura flex-col para uniformidad) */}
+            {/* TARJETA 2 */}
             <div className="relative bg-gradient-to-r from-orange-500 to-orange-300 h-48 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center gap-3">
               <div>
                 <span className="bg-black/60 text-white text-sm px-4 py-1.5 rounded-full font-medium">

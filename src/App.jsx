@@ -12,6 +12,9 @@ import Footer from "./Components/Footer"
 
 import Hero from "./Components/Hero"
 import Eslogan from "./Components/Eslogan"
+
+import Lista from "./Components/Lista"
+
 import Novedades from "./Components/Novedades"
 import BarraNavegacion from "./Components/BarraNavegacion"
 import Header from "./Components/Header"
@@ -55,6 +58,7 @@ function App() {
         <Route path="/galeria" element={<Galeria/>}/>
         <Route path="/imagenes1" element={<Imagenes1/>}/>
         <Route path="/imagenes2" element={<Imagenes2/>}/>
+        <Route path="/lista" element={<Lista/>}/>
       </Routes>
 
       {/* <Hero /> */}
@@ -62,6 +66,7 @@ function App() {
       {/* <Novedades /> */}
       {/* <Efemerides /> */}
       {/* <Galeria/> */}
+
       <Footer />
 
     </>
