@@ -33,7 +33,7 @@ function EnConstruccion() {
 
             {/* Botón */}
             <a
-                href="/inicio"
+                href="/"
                 className="px-6 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition"
             >
                 Volver al inicio
