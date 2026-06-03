@@ -2,11 +2,13 @@
 import Hero from "../Components/Hero"
 import Lista from "../Components/Lista"
 import Header from "../Components/Header"
-import Eslogan from "../Components/__Eslogan"
+// import Eslogan from "../Components/__Eslogan"
 import Novedades from "../Components/Novedades"
 import Jubilados from "../Components/Jubilados"
 import ProximosEventos from "../Components/ProximosEventos"
 // import Galeria from "../Components/Galeria"
+
+
 
 //FUNCION
 function Home() {
@@ -16,7 +18,7 @@ function Home() {
             <Hero />
             <Lista />
             <Header />
-            <Eslogan />
+            {/* <Eslogan /> */}
             <Novedades/>
             <Jubilados />
             <ProximosEventos/>

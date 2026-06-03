@@ -25,6 +25,8 @@ import Home from "./pages/Home";
 import EnConstruccion from "./pages/EnConstruccion"
 import ObraSocial from "./pages/ObraSocial"
 
+import Sindicato from "./pages/Sindicato"
+
 import Zonales from "./pages/Zonales"
 import Concordia from "./pages/Concordia"
 import Alcaraz from "./pages/Alcaraz"
@@ -74,7 +76,8 @@ function App() {
         <Route path="/enconstruccion" element={<EnConstruccion />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/obrasocial" element={<ObraSocial />} />
-
+        <Route path="/sindicato" element={<Sindicato />} />
+        
         <Route path="/zonales" element={<Zonales/>}/>
         <Route path="/alcaraz" element={<Alcaraz/>}/>
         <Route path="/cerrito" element={<Cerrito/>}/>
