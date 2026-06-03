@@ -73,161 +73,115 @@
 // }
 
 
-// //EXPORTS
-// export default ObraSocial
-
-//IMPORT
-
-//FUNCION
-// function ObraSocial() {
-//     // [El código comentado se mantiene igual...]
-
-//     return (
-//         <div className="flex flex-col items-center justify-center min-h-screen px-4 py-10">
-
-//             {/* Contenedor de la Imagen */}
-//             <div className="flex justify-center mt-1.5">
-//                 <img
-//                     src="/imagenes-propuesta/4-100.jpeg"
-//                     alt="Lista Candidata SOEVER"
-//                     className="w-full max-w-5xl rounded-2xl shadow-lg"
-//                 />
-//             </div>
-
-//             {/* Botón - Le añadimos mt-8 para empujarlo hacia abajo */}
-//             <a
-//                 href="/"
-//                 className="mt-8 px-6 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition"
-//             >
-//                 Volver al inicio
-//             </a>
-//         </div>
-//     );
-// }
-
-// //EXPORTS
-// export default ObraSocial;
-
 import React from 'react';
 
 function ObraSocial() {
-  return (
-    // Contenedor principal de la página
-    <div className="bg-gray-100 min-h-screen py-10 px-4 flex flex-col justify-center items-center font-sans">
-      
-      {/* Contenedor principal estilo tarjeta/folleto */}
-      <div className="bg-white w-full max-w-lg rounded-[30px] shadow-xl overflow-hidden border border-gray-200 p-2 pb-6">
-        
-        {/* Cabecera Naranja */}
-        <div className="bg-[#E65C23] text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
-          <h1 className="text-4xl md:text-5xl font-black tracking-wide">
-            OBRA SOCIAL
-          </h1>
+    return (
+        // Contenedor principal de la página
+        <div className="bg-gray-100 min-h-screen py-10 px-4 flex flex-col justify-center items-center font-sans">
+
+            {/* Contenedor principal estilo tarjeta/folleto */}
+            <div className="bg-white w-full max-w-lg rounded-[30px] shadow-xl overflow-hidden border border-gray-200 p-2 pb-6">
+
+                {/* Cabecera Naranja */}
+                <div className="bg-[#E65C23] text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
+                    <h1 className="text-4xl md:text-5xl font-black tracking-wide">
+                        OBRA SOCIAL
+                    </h1>
+                </div>
+
+                {/* Cuerpo del Folleto */}
+                <div className="px-6 text-gray-900 text-[15px] leading-snug space-y-4">
+
+                    {/* Lista de viñetas en cursiva y negrita */}
+                    <ul className="list-none space-y-0.5 font-bold italic text-base">
+                        <li>- Transparencia total</li>
+                        <li>- Defensa legal del PMO</li>
+                        <li>- Convenios de salud</li>
+                        <li>- Atención primaria accesible</li>
+                        <li>- Cobertura integral</li>
+                    </ul>
+
+                    {/* Texto resaltado en amarillo */}
+                    <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base my-2">
+                        La salud es un derecho.
+                    </div>
+
+                    {/* Párrafos de Introducción */}
+                    <p>
+                        La obra social pertenece a todos los trabajadores y no a dirigentes o estructuras particulares. Sostenemos que el sindicato tiene la obligación de defender ese patrimonio y priorizar la salud del afiliado y su familia.
+                    </p>
+
+                    <p>
+                        Hay una diferencia entre la conducción sindical y las autoridades de OSPA VIAL, algo importante para exigir transparencia y evitar que los problemas de gestión recaigan sobre los trabajadores.
+                    </p>
+
+                    {/* Sección: Transparencia en las cuentas */}
+                    <div className="pt-2">
+                        <h2 className="font-bold text-base mb-1">Transparencia en las cuentas</h2>
+                        <ul className="list-none space-y-0.5">
+                            <li>Patrimonio real de la obra social.</li>
+                            <li>Pasivos existentes.</li>
+                            <li>Prestaciones suspendidas.</li>
+                            <li>Convenios vigentes y discontinuados.</li>
+                            <li>Reclamos pendientes ante la Superintendencia de Servicios de Salud.</li>
+                            <li>Defensa jurídica de prestaciones</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        Vamos a brindar un servicio jurídico sindical para reclamar administrativamente o judicialmente prestaciones médicas no cubiertas.
+                    </p>
+
+                    {/* Sección: Prestaciones a garantizar */}
+                    <div className="pt-1">
+                        <h3 className="font-bold mb-1">Entre las principales prestaciones garantizar</h3>
+                        <ul className="list-none space-y-0.5">
+                            <li>Consultas médicas.</li>
+                            <li>Internaciones.</li>
+                            <li>Estudios y diagnósticos.</li>
+                            <li>Salud mental.</li>
+                            <li>Medicamentos.</li>
+                            <li>Programas especiales como diabetes, oncología o HIV.</li>
+                            <li>Fertilización asistida.</li>
+                            <li>Discapacidad.</li>
+                            <li>Prótesis, rehabilitation y terapias.</li>
+                            <li className="font-bold pt-1">Convenios con centros de salud</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        Vamos a firmar convenios para garantizar atención primaria, controles básicos, estudios simples, vacunación y derivaciones médicas. El objetivo es acercar la atención al trabajador y acelerar respuestas.
+                    </p>
+
+                    {/* Sección: Consumos problemáticos */}
+                    <div className="pt-2">
+                        <h2 className="font-bold text-base mb-1">Consumos problemáticos</h2>
+                        <p>
+                            Abordaremos los consumos problemáticos como un problema de salud y no disciplinario. Apuntamos a la detección temprana, acompañamiento, confidencialidad y articulación entre salud y recursos humanos.
+                        </p>
+                    </div>
+
+                    {/* Sección: Campañas de prevención */}
+                    <div className="pt-2">
+                        <h2 className="font-bold text-base mb-1">Campañas de prevención</h2>
+                        <p>
+                            Haremos campañas provinciales de salud con controles clínicos, vacunación, prevención de enfermedades, salud mental, hábitos saludables y prevención de accidentes laborales.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Botón de "Volver al inicio" abajo de la tarjeta */}
+            <a
+                href="/"
+                className="mt-8 px-8 py-2.5 bg-[#E65C23] text-white font-bold rounded-xl shadow-md hover:bg-orange-600 transition-all duration-200"
+            >
+                Volver al inicio
+            </a>
         </div>
-
-        {/* Cuerpo del Folleto */}
-        <div className="px-6 text-gray-900 text-[15px] leading-snug space-y-4">
-          
-          {/* Lista de viñetas en cursiva y negrita */}
-          <ul className="list-none space-y-0.5 font-bold italic text-base">
-            <li>- Transparencia total</li>
-            <li>- Defensa legal del PMO</li>
-            <li>- Convenios de salud</li>
-            <li>- Atención primaria accesible</li>
-            <li>- Cobertura integral</li>
-          </ul>
-
-          {/* Texto resaltado en amarillo */}
-          <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base my-2">
-            La salud es un derecho.
-          </div>
-
-          {/* Párrafos de Introducción */}
-          <p>
-            La obra social pertenece a todos los trabajadores y no a dirigentes o estructuras particulares. Sostenemos que el sindicato tiene la obligación de defender ese patrimonio y priorizar la salud del afiliado y su familia.
-          </p>
-
-          <p>
-            Hay una diferencia entre la conducción sindical y las autoridades de OSPA VIAL, algo importante para exigir transparencia y evitar que los problemas de gestión recaigan sobre los trabajadores.
-          </p>
-
-          {/* Sección: Transparencia en las cuentas */}
-          <div className="pt-2">
-            <h2 className="font-bold text-base mb-1">Transparencia en las cuentas</h2>
-            <ul className="list-none space-y-0.5">
-              <li>Patrimonio real de la obra social.</li>
-              <li>Pasivos existentes.</li>
-              <li>Prestaciones suspendidas.</li>
-              <li>Convenios vigentes y discontinuados.</li>
-              <li>Reclamos pendientes ante la Superintendencia de Servicios de Salud.</li>
-              <li>Defensa jurídica de prestaciones</li>
-            </ul>
-          </div>
-
-          <p>
-            Vamos a brindar un servicio jurídico sindical para reclamar administrativamente o judicialmente prestaciones médicas no cubiertas.
-          </p>
-
-          {/* Sección: Prestaciones a garantizar */}
-          <div className="pt-1">
-            <h3 className="font-bold mb-1">Entre las principales prestaciones garantizar</h3>
-            <ul className="list-none space-y-0.5">
-              <li>Consultas médicas.</li>
-              <li>Internaciones.</li>
-              <li>Estudios y diagnósticos.</li>
-              <li>Salud mental.</li>
-              <li>Medicamentos.</li>
-              <li>Programas especiales como diabetes, oncología o HIV.</li>
-              <li>Fertilización asistida.</li>
-              <li>Discapacidad.</li>
-              <li>Prótesis, rehabilitation y terapias.</li>
-              <li className="font-bold pt-1">Convenios con centros de salud</li>
-            </ul>
-          </div>
-
-          <p>
-            Vamos a firmar convenios para garantizar atención primaria, controles básicos, estudios simples, vacunación y derivaciones médicas. El objetivo es acercar la atención al trabajador y acelerar respuestas.
-          </p>
-
-          {/* Sección: Consumos problemáticos */}
-          <div className="pt-2">
-            <h2 className="font-bold text-base mb-1">Consumos problemáticos</h2>
-            <p>
-              Abordaremos los consumos problemáticos como un problema de salud y no disciplinario. Apuntamos a la detección temprana, acompañamiento, confidencialidad y articulación entre salud y recursos humanos.
-            </p>
-          </div>
-
-          {/* Sección: Campañas de prevención */}
-          <div className="pt-2">
-            <h2 className="font-bold text-base mb-1">Campañas de prevención</h2>
-            <p>
-              Haremos campañas provinciales de salud con controles clínicos, vacunación, prevención de enfermedades, salud mental, hábitos saludables y prevención de accidentes laborales.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-      {/* Botón de "Volver al inicio" abajo de la tarjeta */}
-      <a
-        href="/"
-        className="mt-8 px-8 py-2.5 bg-[#E65C23] text-white font-bold rounded-xl shadow-md hover:bg-orange-600 transition-all duration-200"
-      >
-        Volver al inicio
-      </a>
-
-
-                   {/* Contenedor de la Imagen */}
-             <div className="flex justify-center mt-1.5">
-                 <img
-                     src="/imagenes-propuesta/4-100.jpeg"
-                     alt="Lista Candidata SOEVER"
-                     className="w-full max-w-5xl rounded-2xl shadow-lg"
-                 />
-             </div>
-
-    </div>
-  );
+    );
 }
 
 export default ObraSocial;

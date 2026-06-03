@@ -2,7 +2,7 @@
 
 
 //FUNCION
-function Efemerides() {
+function Jubilados() {
     return (
         <section class="py-16">
             <div class="max-w-5xl mx-auto px-4 text-center">
@@ -44,4 +44,4 @@ function Efemerides() {
 }
 
 //EXPORTS
-export default Efemerides
+export default Jubilados

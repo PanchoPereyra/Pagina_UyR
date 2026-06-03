@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Imagenes1() {
+function VillaElisa() {
     
     // Estado para saber qué imagen se está viendo en grande (null = ninguna)
     const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
@@ -20,7 +20,6 @@ function Imagenes1() {
         "/imagenes1/foto1.jpg", 
         "/imagenes1/foto2.jpg",
         "/imagenes1/foto3.PNG",
-        "imagenes/imagenes1/foto1.jpg",
     ];
 
     return (
@@ -96,4 +95,4 @@ function Imagenes1() {
     )
 }
 
-export default Imagenes1;
+export default VillaElisa;

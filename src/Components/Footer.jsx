@@ -1,6 +1,5 @@
 //IMPORT
 
-
 //FUNCION
 function Footer() {
   return (
@@ -56,9 +55,9 @@ function Footer() {
         {/* <a href="#" class="hover:text-yellow-300 transition-colors">
               <img src="imagenes/instagram.png" alt="" />
             </a> */}
-
         {/* </div> */}
         {/* </div> */}
+        
         <div className="text-center md:w-1/2 flex flex-col items-center md:items-end">
           <h2 className="text-xl font-semibold mb-3 text-gray-950">Seguinos</h2>
 

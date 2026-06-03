@@ -1,27 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Imagenes1() {
+function Diamante() {
     
     // Estado para saber qué imagen se está viendo en grande (null = ninguna)
     const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 
     // Tu lista de fotos
     const listaFotos = [
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
-        "imagenes/imagenes1/foto1.jpg",
-    ];
+        "/imagenes/diamante/lista.jpeg",];
 
     return (
         <section className="bg-white min-h-screen py-10 px-4">
@@ -96,4 +83,4 @@ function Imagenes1() {
     )
 }
 
-export default Imagenes1;
+export default Diamante;

@@ -1,3 +1,5 @@
+// IMPORTS
+
 function Lista() {
     return (
         <section className="py-12 md:py-20 bg-white">

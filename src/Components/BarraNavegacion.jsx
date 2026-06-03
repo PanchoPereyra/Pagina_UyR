@@ -11,9 +11,13 @@ function BarraNavegacion() {
             <nav className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-950 text-lg sm:text-xl font-semibold">
                 <a href="/" className="">Inicio</a>
                 <a href="/novedades" className="">Novedades</a>
-                <a href="/galeria" className="">Eventos</a>
-                <a href="/enconstruccion" className="">Efemérides</a>
-                <a href="/lista" className="">Lista</a>
+                {/* <a href="/galeria" className="">Eventos</a> */}
+                <a href="/enconstruccion" className="">Jubilados</a>
+
+                {/* <a href="/galeria" className="">Galería</a> */}
+                <a href="/zonales" className="">Zonales</a>
+                
+                <a href="/lista" className="">Lista 1</a>
                 <a href="/obrasocial" className="">Obra Social</a>
                 {/* <a href="#" className="hover:text-blue-600">Galería</a> */}
 

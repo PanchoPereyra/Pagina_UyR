@@ -1,6 +1,5 @@
 //IMPORT
 
-
 //FUNCION
 function Eslogan() {
     return (

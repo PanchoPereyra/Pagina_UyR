@@ -2,9 +2,9 @@
 import Hero from "../Components/Hero"
 import Lista from "../Components/Lista"
 import Header from "../Components/Header"
-import Eslogan from "../Components/Eslogan"
+import Eslogan from "../Components/__Eslogan"
 import Novedades from "../Components/Novedades"
-import Efemerides from "../Components/Efemerides"
+import Jubilados from "../Components/Jubilados"
 import ProximosEventos from "../Components/ProximosEventos"
 // import Galeria from "../Components/Galeria"
 
@@ -12,12 +12,13 @@ import ProximosEventos from "../Components/ProximosEventos"
 function Home() {
     return (
         <div>
+
             <Hero />
             <Lista />
             <Header />
             <Eslogan />
             <Novedades/>
-            <Efemerides />
+            <Jubilados />
             <ProximosEventos/>
             {/* <Galeria /> */}
 

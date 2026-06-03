@@ -5,14 +5,11 @@
 // import './App.css'
 // acá
 
-
-import Efemerides from "./Components/Efemerides"
+import Jubilados from "./Components/Jubilados"
 import Footer from "./Components/Footer"
 //import Galeria from "./Components/Galeria"
-
 import Hero from "./Components/Hero"
-import Eslogan from "./Components/Eslogan"
-
+import Eslogan from "./Components/__Eslogan"
 import Lista from "./Components/Lista"
 
 import Novedades from "./Components/Novedades"
@@ -27,7 +24,29 @@ import Noticias4 from "./pages/Noticias4"
 import Home from "./pages/Home";
 import EnConstruccion from "./pages/EnConstruccion"
 import ObraSocial from "./pages/ObraSocial"
-import Galeria from "./pages/Galeria"
+
+import Zonales from "./pages/Zonales"
+import Concordia from "./pages/Concordia"
+import Alcaraz from "./pages/Alcaraz"
+import Cerrito from "./pages/Cerrito"
+import Chajari from "./pages/Chajari"
+import ConcepcionUruguay from "./pages/ConcepcionUruguay"
+import CostaUruguay from "./pages/CostaUruguay"
+import Diamante from "./pages/Diamante"
+import Federal from "./pages/Federal"
+import Feliciano from "./pages/Feliciano"
+import Gualeguay from "./pages/Gualeguay"
+import Gualeguaychu from "./pages/Gualeguaychu"
+import Islas from "./pages/Islas"
+import LaPaz from "./pages/LaPaz"
+import Nogoya from "./pages/Nogoya"
+import SanSalvador from "./pages/SanSalvador"
+import Segui from "./pages/Segui"
+import Tala from "./pages/Tala"
+import Victoria from "./pages/Victoria"
+import VillaElisa from "./pages/VillaElisa"
+import Villaguay from "./pages/Villaguay"
+
 import Imagenes1 from "./pages/Imagenes1"
 import Imagenes2 from "./pages/Imagenes2"
 
@@ -55,7 +74,23 @@ function App() {
         <Route path="/enconstruccion" element={<EnConstruccion />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/obrasocial" element={<ObraSocial />} />
-        <Route path="/galeria" element={<Galeria/>}/>
+
+        <Route path="/zonales" element={<Zonales/>}/>
+        <Route path="/alcaraz" element={<Alcaraz/>}/>
+        <Route path="/cerrito" element={<Cerrito/>}/>
+        <Route path="/chajari" element={<Chajari/>}/>
+        <Route path="/concepcionuruguay" element={<ConcepcionUruguay/>}/>
+        <Route path="/concordia" element={<Concordia/>}/>
+        <Route path="/costauguguay" element={<CostaUruguay/>}/>
+        <Route path="/diamante" element={<Diamante/>}/>
+        <Route path="/federal" element={<Federal/>}/>
+        <Route path="/feliciano" element={<Feliciano/>}/>
+        <Route path="/gualeguay" element={<Gualeguay/>}/>
+        <Route path="/gualeguaychu" element={<Gualeguaychu/>}/>
+        <Route path="/islas" element={<Islas/>}/>
+        <Route path="/lapaz" element={<LaPaz/>}/>
+        <Route path="/nogoya" element={<Nogoya/>}/>
+
         <Route path="/imagenes1" element={<Imagenes1/>}/>
         <Route path="/imagenes2" element={<Imagenes2/>}/>
         <Route path="/lista" element={<Lista/>}/>
