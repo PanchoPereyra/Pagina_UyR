@@ -14,7 +14,7 @@ function BarraNavegacion() {
                 {/* novedades lo cambiamos por propuestas */}
                 <a href="/propuestas" className="">Propuestas</a> 
 
-                {/* <a href="/galeria" className="">Eventos</a> */}
+                <a href="/eventos" className="">Eventos</a>
                 <a href="/jubilados" className="">Jubilados</a>
                 {/* <a href="/enconstruccion" className="">En Actividad</a> */}
                 <a href="/sindicato" className="">Sindicato</a>

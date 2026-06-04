@@ -104,7 +104,7 @@ function App() {
         <Route path="/imagenes2" element={<Imagenes2/>}/>
         <Route path="/lista" element={<Lista/>}/>
 
-        <Route path="/evento" element={<Evento />} />
+        <Route path="/eventos" element={<Evento />} />
       </Routes>
 
       {/* <Hero /> */}
