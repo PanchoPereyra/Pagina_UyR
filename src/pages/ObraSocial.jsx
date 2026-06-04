@@ -83,10 +83,27 @@ function ObraSocial() {
             {/* Contenedor principal estilo tarjeta/folleto */}
             <div className="bg-white w-full max-w-lg rounded-[30px] shadow-xl overflow-hidden border border-gray-200 p-2 pb-6">
 
+                <div className="bg-[#E65C23] text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
+                    <h1 className="text-4xl md:text-5xl font-black tracking-wide">
+                        OSPA
+                    </h1>
+                </div>
+                {/* <p className="text-gray-600 text-center max-w-md mx-auto mb-8 text-lg italic leading-relaxed">
+                    La sección Obra Social será un espacio dedicado a centralizar toda la información, beneficios y servicios de salud disponibles para los afiliados. Nuestro objetivo es brindar una atención clara, accesible y cercana, para que cada afiliado y su familia puedan realizar consultas y gestiones de manera simple y segura.
+                    Muy pronto vas a poder encontrar:
+                    Información completa sobre la cobertura médica. Detalles de prestadores, sanatorios y especialidades disponibles. Acceso a trámites, autorizaciones y derivaciones. Beneficios adicionales y programas de salud. Novedades, comunicados y actualizaciones importantes. Canales de contacto directo con el área de Obra Social.
+                </p> */}
+
+                <p className="text-gray-600 text-justify max-w-md mx-auto mb-8 text-lg italic leading-relaxed">
+                    La sección Obra Social será un espacio dedicado a centralizar toda la información, beneficios y servicios de salud disponibles para los afiliados. Nuestro objetivo es brindar una atención clara, accesible y cercana, para que cada afiliado y su familia puedan realizar consultas y gestiones de manera simple y segura.
+                    Muy pronto vas a poder encontrar:
+                    Información completa sobre la cobertura médica. Detalles de prestadores, sanatorios y especialidades disponibles. Acceso a trámites, autorizaciones y derivaciones. Beneficios adicionales y programas de salud. Novedades, comunicados y actualizaciones importantes. Canales de contacto directo con el área de Obra Social.
+                </p>
+
                 {/* Cabecera Naranja */}
                 <div className="bg-[#E65C23] text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
                     <h1 className="text-4xl md:text-5xl font-black tracking-wide">
-                        OBRA SOCIAL
+                        PROPUESTA OBRA SOCIAL
                     </h1>
                 </div>
 
@@ -175,7 +192,7 @@ function ObraSocial() {
 
             {/* Botón de "Volver al inicio" abajo de la tarjeta */}
             <a
-                href="/"               
+                href="/"
                 className="mt-8 px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition"
             >
                 Volver al inicio
