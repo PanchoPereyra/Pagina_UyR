@@ -21,7 +21,7 @@ function ProximosEventos() {
                         </p>
                     </div>
                 </div>
-                <a href="/galeria" class="text-black hover:underline text-sm font-medium ">Leer más →</a>
+                <a href="/evento" class="text-black hover:underline text-sm font-medium ">Leer más →</a>
             </div>
         </section>
     )

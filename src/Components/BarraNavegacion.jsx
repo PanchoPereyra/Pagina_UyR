@@ -10,11 +10,13 @@ function BarraNavegacion() {
             {/* <nav className="flex space-x-6 text-gray-950 text-xl font-semibold"> */}
             <nav className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-950 text-lg sm:text-xl font-semibold">
                 <a href="/" className="">Inicio</a>
-                <a href="/novedades" className="">Novedades</a>
+
+                {/* novedades lo cambiamos por propuestas */}
+                <a href="/propuestas" className="">Propuestas</a> 
 
                 {/* <a href="/galeria" className="">Eventos</a> */}
-                <a href="/enconstruccion" className="">Jubilados</a>
-                <a href="/enconstruccion" className="">En Actividad</a>
+                <a href="/jubilados" className="">Jubilados</a>
+                {/* <a href="/enconstruccion" className="">En Actividad</a> */}
                 <a href="/sindicato" className="">Sindicato</a>
 
                 {/* <a href="/galeria" className="">Galería</a> */}

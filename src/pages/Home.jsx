@@ -3,10 +3,11 @@ import Hero from "../Components/Hero"
 import Lista from "../Components/Lista"
 import Header from "../Components/Header"
 // import Eslogan from "../Components/__Eslogan"
-import Novedades from "../Components/Novedades"
-import Jubilados from "../Components/Jubilados"
+// import Novedades from "../Components/Novedades"
+// import Jubilados from "../Components/Jubilados"
 import ProximosEventos from "../Components/ProximosEventos"
 // import Galeria from "../Components/Galeria"
+
 
 
 
@@ -19,10 +20,11 @@ function Home() {
             <Lista />
             <Header />
             {/* <Eslogan /> */}
-            <Novedades/>
-            <Jubilados />
+            {/* <Novedades/> */}
+            {/* <Jubilados /> */}
             <ProximosEventos/>
             {/* <Galeria /> */}
+            {/* <Evento /> */}
 
         </div>
     )
