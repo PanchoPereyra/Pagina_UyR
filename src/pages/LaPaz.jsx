@@ -9,7 +9,7 @@ function LaPaz() {
     // Tu lista de fotos
 
             const listaFotos = [
-        "/imagenes/federal/lista.jpeg",
+        "/imagenes/lapaz/lista.jpeg",
     ];
 
 

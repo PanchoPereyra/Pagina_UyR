@@ -7,7 +7,7 @@ function Footer() {
     // <footer >
     //   <div class="bg-orange-600/65">
     //     <div class="max-w-6xl mx-auto px-6 gap-8 flex justify-evenly">
-    <footer class="bg-orange-600/65 text-white">
+    <footer class="bg-[#E65C23] text-white">
       <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
 
         {/*COLUMNA 1 - DESCRIPCION */}

@@ -3,7 +3,7 @@ function EnConstruccion() {
         <div className="flex flex-col items-center justify-center text-center h-[80vh] px-4">
 
             {/* Icono */}
-            <div className="text-orange-500 mb-4">
+            <div className="bg-[#E65C23] mb-4">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -34,7 +34,7 @@ function EnConstruccion() {
             {/* Botón */}
             <a
                 href="/"
-                className="px-6 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition"
+                className="px-6 py-2 bg-[#E65C23] text-white rounded-lg shadow hover:bg-[#E65C23] transition"
             >
                 Volver al inicio
             </a>

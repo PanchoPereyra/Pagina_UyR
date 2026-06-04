@@ -175,8 +175,8 @@ function ObraSocial() {
 
             {/* Botón de "Volver al inicio" abajo de la tarjeta */}
             <a
-                href="/"
-                className="mt-8 px-8 py-2.5 bg-[#E65C23] text-white font-bold rounded-xl shadow-md hover:bg-orange-600 transition-all duration-200"
+                href="/"               
+                className="mt-8 px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition"
             >
                 Volver al inicio
             </a>

@@ -149,8 +149,8 @@ function Propuestas() {
 
             {/* Botón de "Volver al inicio" abajo de todo */}
               <a
-                href="/inicio"
-                className="px-6 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition"
+                href="/"
+                className="px-6 py-2 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition"
             >
                 Volver al inicio
             </a>
