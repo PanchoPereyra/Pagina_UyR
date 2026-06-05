@@ -55,6 +55,7 @@ import Evento from "./pages/Evento"
 
 import Imagenes1 from "./pages/Imagenes1"
 import Imagenes2 from "./pages/Imagenes2"
+import LinksInteres from "./pages/LinksInteres"
 
 
 
@@ -81,6 +82,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/obrasocial" element={<ObraSocial />} />
         <Route path="/sindicato" element={<Sindicato />} />
+        <Route path="/linksinteres" element={<LinksInteres />} />
         <Route path="/jubilados" element={<Jubilados />} />
         <Route path="/propuestas" element={<Propuestas />} />
         

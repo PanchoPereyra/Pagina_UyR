@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 //FUNCION
 function Evento() {
@@ -25,14 +27,28 @@ function Evento() {
                         <li>- Elecciones SOEVER 2026</li>
                     </ul>
 
-                    {/* Texto resaltado en amarillo con los datos clave de la convocatoria */}
-                    <div className="inline-block bg-[#FFF200] px-2 py-1 font-bold text-base my-2 text-left">
-                        VIERNES 5 DE JUNIO • 18:30 HS<br />
-                        Salta 141 – Obras Sanitarias, Paraná.
+                    {/* CORREGIDO: items-center para alinear todo horizontalmente al medio */}
+                    <div className="flex flex-col items-center gap-4 pt-2 pb-1 w-full">
+                        
+                        {/* Texto resaltado en amarillo: text-center para centrar las líneas internas */}
+                        <div className="bg-[#FFF200] px-4 py-2 font-bold text-base text-center w-full rounded-sm shadow-sm">
+                            VIERNES 5 DE JUNIO • 18:30 HS<br />
+                            Salta 141 – Obras Sanitarias, Paraná.
+                        </div>
+
+                        {/* ================= BOTÓN DE UBICACIÓN AL MEDIO ================= */}
+                        <a
+                            href="https://maps.app.goo.gl/cT7wTasWKW6eEMaQ8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full sm:w-auto text-center px-6 py-2.5 bg-white text-[#E65C23] font-black text-xs rounded-xl border-2 border-[#E65C23] hover:bg-[#E65C23] hover:text-white transition-all duration-200 uppercase tracking-wide shadow-sm"
+                        >
+                            Ver Ubicación en Mapa
+                        </a>
                     </div>
 
                     {/* Párrafos del comunicado */}
-                    <p className="font-bold">
+                    <p className="font-bold pt-2">
                         Compañeras y compañeros:
                     </p>
 
@@ -65,13 +81,15 @@ function Evento() {
                 </div>
             </div>
 
+            {/* BOTÓN DE RETORNO CORREGIDO CON LINK DE REACT ROUTER */}
             <a
                 href="/"
-                className="px-6 py-2 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition"
+                className="px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition"
             >
                 Volver al inicio
             </a>
         </div>
-    )
+    );
 }
+
 export default Evento;

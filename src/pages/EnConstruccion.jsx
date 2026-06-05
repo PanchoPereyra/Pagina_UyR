@@ -34,7 +34,7 @@ function EnConstruccion() {
             {/* Botón */}
             <a
                 href="/"
-                className="px-6 py-2 bg-[#E65C23] text-white rounded-lg shadow hover:bg-[#E65C23] transition"
+                className="px-6 py-2 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition"
             >
                 Volver al inicio
             </a>

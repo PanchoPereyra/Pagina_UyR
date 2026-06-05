@@ -48,7 +48,7 @@ function Novedades() {
                         </div>
 
                         {/* TARJETA 2 */}
-                        <div class="bg-orange-600/65 p-6 rounded-lg shadow-md text-left">
+                        <div class="bg-[#E65C23] p-6 rounded-lg shadow-md text-left">
                             <div class="flex items-center justify-between mb-4">
                                 <span class="text-sm text-white">2 de Enero, 2024</span>
                             </div>
@@ -59,7 +59,7 @@ function Novedades() {
                         </div>
 
                         {/* TARJETA 3 */}
-                        <div class="bg-orange-600/65 p-6 rounded-lg shadow-md text-left">
+                        <div class="bg-[#E65C23] p-6 rounded-lg shadow-md text-left">
                             <div class="flex items-center justify-between mb-4">
                                 {/* <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Negociación</span> */}
                                 <span class="text-sm text-white">3 de Enero, 2024</span>

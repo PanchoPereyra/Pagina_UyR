@@ -63,40 +63,100 @@ function Hero() {
                     </p>
 
                     {/* ================= CUENTA REGRESIVA EQUILIBRADA ================= */}
-                    {!tiempoRestante.finalizado ? (
+                    {/* {!tiempoRestante.finalizado ? (
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 bg-gray-900 text-white p-4 rounded-2xl shadow-md border border-gray-800 w-full sm:w-auto mt-1.5">
-                            <span className="text-sm md:text-base font-bold tracking-wider text-orange-400 uppercase pr-2">
+                            <span className="text-sm md:text-base font-bold tracking-wider text-[#E65C23] uppercase pr-2">
                                 Falta para votar:
                             </span>
                             
-                            <div className="flex gap-2 text-center">
+                            <div className="flex gap-2 text-center"> */}
                                 {/* Días */}
-                                <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
+                                {/* <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
                                     <span className="block text-lg md:text-2xl font-black text-white">{tiempoRestante.dias}</span>
                                     <span className="text-[9px] text-gray-400 uppercase font-bold">Días</span>
-                                </div>
+                                </div> */}
                                 {/* Horas */}
-                                <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
+                                {/* <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
                                     <span className="block text-lg md:text-2xl font-black text-white">{tiempoRestante.horas.toString().padStart(2, '0')}</span>
                                     <span className="text-[9px] text-gray-400 uppercase font-bold">Horas</span>
-                                </div>
+                                </div> */}
                                 {/* Minutos */}
-                                <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
+                                {/* <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
                                     <span className="block text-lg md:text-2xl font-black text-white">{tiempoRestante.minutos.toString().padStart(2, '0')}</span>
                                     <span className="text-[9px] text-gray-400 uppercase font-bold">Min</span>
-                                </div>
+                                </div> */}
                                 {/* Segundos */}
-                                <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
-                                    <span className="block text-lg md:text-2xl font-black text-orange-400 animate-pulse">{tiempoRestante.segundos.toString().padStart(2, '0')}</span>
+                                {/* <div className="bg-black/30 rounded-lg px-3 py-1.5 min-w-[55px]">
+                                    <span className="block text-lg md:text-2xl font-black text-[#E65C23] animate-pulse">{tiempoRestante.segundos.toString().padStart(2, '0')}</span>
                                     <span className="text-[9px] text-gray-400 uppercase font-bold">Seg</span>
                                 </div>
                             </div>
                         </div>
                     ) : (
-                        <div className="bg-orange-500 text-white font-black text-base md:text-lg px-6 py-2.5 rounded-xl shadow animate-bounce tracking-wide uppercase mt-1.5">
+                        <div className="bg-[#E65C23] text-white font-black text-base md:text-lg px-6 py-2.5 rounded-xl shadow animate-bounce tracking-wide uppercase mt-1.5">
                             ¡Hoy elegimos Unión y Renovación!
-                        </div>
-                    )}
+                        </div> */}
+                    {/* )} */}
+
+{/* ================= CUENTA REGRESIVA CON BORDE NARANJA Y FONDOS NEGROS ================= */}
+{!tiempoRestante.finalizado ? (
+    /* Contenedor principal con fondo blanco, borde naranja oficial y esquinas redondeadas */
+    <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 bg-white p-4 rounded-2xl border-2 border-[#E65C23] shadow-sm w-full sm:w-auto mt-2">
+        
+        {/* Texto en el naranja oficial de la campaña */}
+        <span className="text-sm md:text-base font-black tracking-wider text-[#E65C23] uppercase">
+            Falta para votar:
+        </span>
+        
+        <div className="flex gap-2 text-center">
+            {/* Días */}
+            <div className="bg-gray-950 rounded-xl px-3 py-1.5 min-w-[58px] shadow-inner border border-gray-800">
+                <span className="block text-xl md:text-2xl font-black text-[#E65C23]">
+                    {tiempoRestante.dias}
+                </span>
+                <span className="text-[9px] text-gray-400 uppercase font-bold tracking-wider block mt-0.5">
+                    Días
+                </span>
+            </div>
+
+            {/* Horas */}
+            <div className="bg-gray-950 rounded-xl px-3 py-1.5 min-w-[58px] shadow-inner border border-gray-800">
+                <span className="block text-xl md:text-2xl font-black text-[#E65C23]">
+                    {tiempoRestante.horas.toString().padStart(2, '0')}
+                </span>
+                <span className="text-[9px] text-gray-400 uppercase font-bold tracking-wider block mt-0.5">
+                    Horas
+                </span>
+            </div>
+
+            {/* Minutos */}
+            <div className="bg-gray-950 rounded-xl px-3 py-1.5 min-w-[58px] shadow-inner border border-gray-800">
+                <span className="block text-xl md:text-2xl font-black text-[#E65C23]">
+                    {tiempoRestante.minutos.toString().padStart(2, '0')}
+                </span>
+                <span className="text-[9px] text-gray-400 uppercase font-bold tracking-wider block mt-0.5">
+                    Min
+                </span>
+            </div>
+
+            {/* Segundos */}
+            <div className="bg-gray-950 rounded-xl px-3 py-1.5 min-w-[58px] shadow-inner border border-gray-800">
+                <span className="block text-xl md:text-2xl font-black text-[#E65C23] animate-pulse">
+                    {tiempoRestante.segundos.toString().padStart(2, '0')}
+                </span>
+                <span className="text-[9px] text-gray-400 uppercase font-bold tracking-wider block mt-0.5">
+                    Seg
+                </span>
+            </div>
+        </div>
+    </div>
+) : (
+    <div className="bg-orange-500 text-white font-black text-base md:text-lg px-6 py-2.5 rounded-xl shadow animate-bounce tracking-wide uppercase mt-1.5">
+        ¡Hoy elegimos Unión y Renovación!
+    </div>
+)}
+
+
                 </div>
 
             </div>

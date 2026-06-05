@@ -32,6 +32,10 @@ function BarraNavegacion() {
                         Sindicato
                     </Link>
 
+                    <Link to="/linksinteres" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                        Links de interés
+                    </Link>
+
                     <Link to="/zonales" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Zonales
                     </Link>
