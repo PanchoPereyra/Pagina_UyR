@@ -13,9 +13,9 @@ function LinksInteres() {
         },
         {
             id: 2,
-            titulo: "Plataforma de Propuestas Completas",
+            titulo: "Fede Colominas en entrevista con Canal Once",
             fecha: "Actualizado",
-            descripcion: "Mirá el video explicativo con los ejes estructurales de la Lista 1 para toda la provincia.",
+            descripcion: "Entrevista Canal Once.",
             textoBoton: "ver video", 
             videoUrl: "/video/entrevista-canal-once.mp4", 
         },
@@ -29,17 +29,17 @@ function LinksInteres() {
         },
         {
             id: 4,
-            titulo: "Spot Radial: Propuestas de Salud",
-            fecha: "Audio • Spot 1",
-            descripcion: "Escuchá nuestro mensaje de campaña enfocado en las mejoras para la Obra Social y la atención médica familiar.",
+            titulo: "Spot Radial",
+            fecha: "Audio",
+            descripcion: "Fede Colominas en entrevista radio Plaza.",
             textoBoton: "Escuchar Audio",
             audioUrl: "/audio/entrevista-radio-plaza.mpeg", 
         },
         {
             id: 5,
-            titulo: "Mensaje de Federico Colominas",
-            fecha: "Audio • Mensaje",
-            descripcion: "Palabras de nuestro candidato a Secretario General para todos los trabajadores viales de la provincia.",
+            titulo: "Spot Radial",
+            fecha: "Audio",
+            descripcion: "Fede Colominas en entrevista radio Rubén Lovera.",
             textoBoton: "Escuchar Mensaje",
             audioUrl: "/audio/fedecolominas.mpeg", 
         }
@@ -145,7 +145,7 @@ function LinksInteres() {
                     ))}
                 </div>
 
-                <Link to="/" className="mt-16 px-8 py-2.5 bg-[#E65C23] text-white font-bold rounded-xl shadow-md hover:bg-orange-600 transition-all duration-200">
+                <Link to="/" className="mt-16 px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition">
                     Volver al inicio
                 </Link>
             </div>

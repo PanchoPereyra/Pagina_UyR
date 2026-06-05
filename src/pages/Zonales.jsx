@@ -315,6 +315,8 @@
 
 // 1. ARREGLO DE DATOS
 // Aquí centralizás toda la información. Si mañana tenés 50 zonales, solo agregás objetos acá.
+import React from 'react';
+
 const dataZonales = [
   { id: 1, nombre: "Zonal I - La Paz", ruta: "/lapaz" },
   { id: 2, nombre: "Zonal II - Federal", ruta: "/federal" },
@@ -340,43 +342,54 @@ const dataZonales = [
   { id: 22, nombre: "Cantera Costa Paraná", ruta: "/costaparana" },
 ];
 
-// 2. FUNCION PRINCIPAL
 function Zonales() {
   return (
-    <section className="py-12 md:py-20">
+    <section className="py-12 md:py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 text-center">
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
-          Galería de Fotos
+        <h2 className="text-3xl md:text-5xl font-black mb-4 text-black uppercase tracking-tight">
+          Nuestras Zonales
         </h2>
 
-        <p className="text-gray-600 mb-10 text-sm md:text-lg max-w-2xl mx-auto">
-          Momentos que reflejan nuestra lucha y unidad como organización
+        <p className="text-gray-600 mb-12 text-sm md:text-lg max-w-2xl mx-auto font-medium">
+          Recorriendo cada rincón de la provincia junto a los trabajadores viales.
         </p>
 
         {/* GRID RESPONSIVE */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-          
-          {/* 3. RECORRIDO DEL ARREGLO */}
+
           {dataZonales.map((zonal) => (
-            <div 
-              key={zonal.id} 
-              className="relative bg-gradient-to-r from-orange-500 to-orange-300 h-48 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center gap-3"
+            <div
+              key={zonal.id}
+              className="relative bg-gradient-to-r from-[#E65C23] to-orange-400 h-48 rounded-2xl shadow-md hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 flex flex-col items-center justify-center gap-3 overflow-hidden group"
             >
-              <div>
-                <span className="bg-black/60 text-white text-sm px-4 py-1.5 rounded-full font-medium">
-                  {/* Si querés que diga "Zonal 1", "Zonal 2" de forma dinámica usamos zonal.nombre. Si querés que todos digan solo "Zonal", dejás el texto fijo */}
-                  {zonal.nombre || "Zonal"} 
+
+              {/* ================= MARCA DE AGUA DEL LOGO EN EL FONDO ================= */}
+              {/* Quitamos 'brightness-0 invert' y subimos levemente la opacidad a un 15% (opacity-15) para que el logo original se fusione suavemente con el fondo naranja */}
+              <div className="absolute right-[-20px] bottom-[-20px] w-52 h-52 pointer-events-none select-none opacity-25 transform -rotate-12 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0">
+                <img
+                  src="/imagenes/logo.png"
+                  className="w-full h-full object-contain"
+                  alt="Logo Fondo"
+                />
+              </div>
+
+              {/* CONTENIDO DE LA TARJETA */}
+              <div className="relative z-10 px-4 text-center">
+                <span className="inline-block bg-black/70 text-white text-sm px-5 py-2 rounded-full font-bold tracking-wide uppercase shadow-sm">
+                  {zonal.nombre}
                 </span>
               </div>
-              <div>
-                <a 
-                  href={zonal.ruta} 
-                  className="text-black hover:text-white transition-colors hover:underline text-sm font-bold flex items-center gap-1"
+
+              <div className="relative z-10">
+                <a
+                  href={zonal.ruta}
+                  className="text-gray-950 hover:text-white transition-colors text-sm font-black flex items-center gap-1 uppercase tracking-wider bg-white/30 hover:bg-black px-4 py-1.5 rounded-xl border border-white/20 shadow-sm"
                 >
                   Ver más <span>→</span>
                 </a>
               </div>
+
             </div>
           ))}
 
@@ -386,5 +399,4 @@ function Zonales() {
   );
 }
 
-// EXPORTS
 export default Zonales;
