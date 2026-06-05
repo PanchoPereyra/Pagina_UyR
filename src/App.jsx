@@ -57,6 +57,9 @@ import Imagenes1 from "./pages/Imagenes1"
 import Imagenes2 from "./pages/Imagenes2"
 import LinksInteres from "./pages/LinksInteres"
 
+// Importación de Analytics
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 
@@ -116,7 +119,8 @@ function App() {
       {/* <Galeria/> */}
 
       <Footer />
-
+      {/* El rastreador de Vercel queda aquí resguardado */}
+      <Analytics />
     </>
   )
 }
