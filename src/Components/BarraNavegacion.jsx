@@ -5,50 +5,50 @@ import { Link } from "react-router-dom";
 function BarraNavegacion() {
     return (
         <header className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b-2 border-[#E65C23] shadow-md transition-all">
-            {/* Contenedor corregido para centrar perfectamente todo el bloque */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex justify-center items-center">
+            {/* Contenedor principal: En PC justifica al centro, en Celular permite desborde horizontal */}
+            <div className="max-w-7xl mx-auto px-2 sm:px-6 py-2 flex md:justify-center items-center overflow-x-auto scrollbar-none">
                 
                 {/* MENU */}
-                {/* Ajustamos gap-x-2 para que los recuadros tengan una separación limpia entre sí */}
-                <nav className="flex flex-wrap justify-center items-center gap-x-2 gap-y-2 text-gray-800 text-base sm:text-lg font-bold">
+                {/* 'flex-nowrap' en celular evita que se vaya para abajo. 'md:flex-wrap' en PC mantiene tu diseño original */}
+                {/* 'whitespace-nowrap' clave para que el texto de los botones no se corte en dos líneas */}
+                <nav className="flex flex-nowrap md:flex-wrap items-center gap-x-1 sm:gap-x-2 pb-1 md:pb-0 text-gray-800 text-sm sm:text-base md:text-lg font-bold whitespace-nowrap">
                     
-                    <Link to="/" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Inicio
                     </Link>
 
-                    <Link to="/propuestas" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/propuestas" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Propuestas
                     </Link> 
 
-                    <Link to="/eventos" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/eventos" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Eventos
                     </Link>
 
-                    <Link to="/jubilados" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/jubilados" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Jubilados
                     </Link>
 
-                    <Link to="/sindicato" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/sindicato" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Sindicato
                     </Link>
 
-                    <Link to="/linksinteres" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/linksinteres" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Links de interés
                     </Link>
 
-                    <Link to="/zonales" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/zonales" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Zonales
                     </Link>
 
-                    <Link to="/obrasocial" className="px-4 py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
+                    <Link to="/obrasocial" className="px-3 py-1.5 md:px-4 md:py-2 rounded-xl hover:bg-orange-50 hover:text-[#E65C23] transition-all duration-200">
                         Obra Social
                     </Link>
 
                     {/* BOTÓN DESTACADO: LISTA 1 */}
-                    {/* Le cambiamos las esquinas a rounded-xl para que juegue simétricamente con el resto del menú */}
                     <Link 
                         to="/lista" 
-                        className="ml-2 px-5 py-2 bg-[#E65C23] text-white rounded-xl font-black text-sm uppercase tracking-wider shadow-sm hover:bg-orange-600 hover:shadow-md hover:scale-105 transition-all duration-200"
+                        className="ml-1 md:ml-2 px-4 py-1.5 md:px-5 md:py-2 bg-[#E65C23] text-white rounded-xl font-black text-xs md:text-sm uppercase tracking-wider shadow-sm hover:bg-orange-600 hover:shadow-md hover:scale-105 transition-all duration-200"
                     >
                         Lista 1
                     </Link>
