@@ -320,7 +320,7 @@ import React from 'react';
 const dataZonales = [
   { id: 1, nombre: "Zonal I - La Paz", ruta: "/lapaz" },
   { id: 2, nombre: "Zonal II - Federal", ruta: "/federal" },
-  { id: 3, nombre: "Zonal II - Cerrito", ruta: "/cerrito" },
+  { id: 3, nombre: "Zonal III - Cerrito", ruta: "/cerrito" },
   { id: 4, nombre: "Zonal IV - Villaguay", ruta: "/villaguay" },
   { id: 5, nombre: "Zonal V - Concordia", ruta: "/concordia" },
   { id: 6, nombre: "Zonal VI - Diamante", ruta: "/diamante" },

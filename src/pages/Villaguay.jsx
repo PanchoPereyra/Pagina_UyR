@@ -8,18 +8,7 @@ function Villaguay() {
 
     // Tu lista de fotos
     const listaFotos = [
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
-        "/imagenes1/foto1.jpg", 
-        "/imagenes1/foto2.jpg",
-        "/imagenes1/foto3.PNG",
+        "/imagenes/villaguay/lista.jpeg",
     ];
 
     return (
