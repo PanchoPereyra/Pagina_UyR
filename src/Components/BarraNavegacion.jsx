@@ -35,7 +35,7 @@ function BarraNavegacion() {
                         <Link to="/eventos" className="py-1.5 px-0.5 rounded-lg active:bg-orange-50 active:text-[#E65C23]">Eventos</Link>
                         <Link to="/jubilados" className="py-1.5 px-0.5 rounded-lg active:bg-orange-50 active:text-[#E65C23]">Jubilados</Link>
                         <Link to="/sindicato" className="py-1.5 px-0.5 rounded-lg active:bg-orange-50 active:text-[#E65C23]">Sindicato</Link>
-                        <Link to="/linksinteres" className="py-1.5 px-0.5 rounded-lg active:bg-orange-50 active:text-[#E65C23]">Links</Link>
+                        <Link to="/linksinteres" className="py-1.5 px-0.5 rounded-lg active:bg-orange-50 active:text-[#E65C23]">Enlaces de Interés</Link>
                         <Link to="/zonales" className="py-1.5 px-0.5 rounded-lg active:bg-orange-50 active:text-[#E65C23]">Zonales</Link>
                         <Link to="/obrasocial" className="py-1.5 px-0.5 rounded-lg active:bg-orange-50 active:text-[#E65C23]">Obra Social</Link>
                     </nav>
