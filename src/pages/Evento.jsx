@@ -167,7 +167,7 @@ function Evento() {
             </div>
 
             {/* BOTÓN VOLVER */}
-            <Link to="/" className="px-8 py-2.5 bg-[#E65C23] text-white font-bold rounded-lg shadow hover:bg-orange-600 transition">
+            <Link to="/" className="px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition">
                 Volver al inicio
             </Link>
         </div>
