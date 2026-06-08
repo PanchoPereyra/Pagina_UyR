@@ -316,6 +316,7 @@
 // 1. ARREGLO DE DATOS
 // Aquí centralizás toda la información. Si mañana tenés 50 zonales, solo agregás objetos acá.
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const dataZonales = [
   { id: 1, nombre: "Zonal I - La Paz", ruta: "/lapaz" },
@@ -382,12 +383,12 @@ function Zonales() {
               </div>
 
               <div className="relative z-10">
-                <a
-                  href={zonal.ruta}
+                <Link
+                  to={zonal.ruta}
                   className="text-gray-950 hover:text-white transition-colors text-sm font-black flex items-center gap-1 uppercase tracking-wider bg-white/30 hover:bg-black px-4 py-1.5 rounded-xl border border-white/20 shadow-sm"
                 >
                   Ver más <span>→</span>
-                </a>
+                </Link>
               </div>
 
             </div>

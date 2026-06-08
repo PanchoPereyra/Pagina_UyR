@@ -8,7 +8,7 @@ function SanSalvador() {
 
     // Tu lista de fotos
     const listaFotos = [
-        "/imagenes/sansalvador/lista.jpeg",
+        "/imagenes/salvador/lista.jpeg",
     ];
 
     return (

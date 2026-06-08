@@ -8,7 +8,7 @@ function Chajari() {
 
     // Tu lista de fotos
     const listaFotos = [
-        "/imagenes/chajari/lista.jpg",
+        "/imagenes/chajari/lista.jpeg",
     ];
 
     return (

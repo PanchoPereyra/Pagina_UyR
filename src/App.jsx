@@ -5,14 +5,14 @@
 // import './App.css'
 // acá
 
-
-import Footer from "./Components/Footer"
+// import Eslogan from "./Components/__Eslogan"
 //import Galeria from "./Components/Galeria"
+// import Novedades from "./Components/Novedades"
+import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
-import Eslogan from "./Components/__Eslogan"
 import Lista from "./Components/Lista"
 
-// import Novedades from "./Components/Novedades"
+
 import BarraNavegacion from "./Components/BarraNavegacion"
 import Header from "./Components/Header"
 import { Routes, Route } from "react-router-dom"
@@ -82,7 +82,6 @@ function App() {
         {/* <Route path="/noticia3" element={<Noticias3 />} /> */}
         {/* <Route path="/noticia4" element={<Noticias4 />} /> */}
         <Route path="/enconstruccion" element={<EnConstruccion />} />
-        <Route path="*" element={<NotFound />} />
         <Route path="/obrasocial" element={<ObraSocial />} />
         <Route path="/sindicato" element={<Sindicato />} />
         <Route path="/linksinteres" element={<LinksInteres />} />
@@ -95,7 +94,7 @@ function App() {
         <Route path="/chajari" element={<Chajari/>}/>
         <Route path="/concepcionuruguay" element={<ConcepcionUruguay/>}/>
         <Route path="/concordia" element={<Concordia/>}/>
-        <Route path="/costauguguay" element={<CostaUruguay/>}/>
+        <Route path="/costauruguay" element={<CostaUruguay/>}/>
         <Route path="/diamante" element={<Diamante/>}/>
         <Route path="/federal" element={<Federal/>}/>
         <Route path="/feliciano" element={<Feliciano/>}/>
@@ -104,12 +103,19 @@ function App() {
         <Route path="/islas" element={<Islas/>}/>
         <Route path="/lapaz" element={<LaPaz/>}/>
         <Route path="/nogoya" element={<Nogoya/>}/>
+        <Route path="/villaguay" element={<Villaguay/>}/>
+        <Route path="/salvador" element={<SanSalvador/>}/>
+        <Route path="/tala" element={<Tala/>}/>
+        <Route path="/villaelisa" element={<VillaElisa/>}/>
+        <Route path="/victoria" element={<Victoria/>}/>
+        <Route path="/segui" element={<Segui/>}/>
 
-        <Route path="/imagenes1" element={<Imagenes1/>}/>
-        <Route path="/imagenes2" element={<Imagenes2/>}/>
+        {/* <Route path="/imagenes1" element={<Imagenes1/>}/>
+        <Route path="/imagenes2" element={<Imagenes2/>}/> */}
         <Route path="/lista" element={<Lista/>}/>
 
         <Route path="/eventos" element={<Evento />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       {/* <Hero /> */}
