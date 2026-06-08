@@ -37,9 +37,9 @@ function Evento() {
 
             {/* Contenedor principal 2 columnas */}
             <div className="bg-white w-full max-w-4xl rounded-[30px] shadow-xl overflow-hidden border border-gray-200 p-2 md:p-4">
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-                    
+
                     {/* COLUMNA IZQUIERDA: Texto y Nota (En celu pasa abajo, en PC va a la izquierda) */}
                     <div className="flex flex-col justify-between p-2 pb-6 md:pb-2 order-last md:order-first">
                         <div>
@@ -61,6 +61,10 @@ function Evento() {
                                         <p className="tracking-wide">🗳️ ELECCIONES SOEVER 2026</p>
                                         <p className="text-base md:text-lg">VIERNES 12 DE JUNIO • 08:00 HS</p>
                                         <p className="text-xs md:text-sm font-bold">📍 San Juan y Andrés Pazos — Sindicato SOEVER</p>
+                                        <p className="text-xs md:text-sm font-extrabold text-gray-900 flex items-start gap-2 leading-tight uppercase tracking-wide">
+
+                                            <span> ⚠️ Importante: Cada zonal votará en su respectivo lugar de trabajo.</span>
+                                        </p>
                                     </div>
 
                                     <a
@@ -114,7 +118,7 @@ function Evento() {
 
                     {/* COLUMNA DERECHA: Afiche + Reloj (Acomodado exactamente como me pediste) */}
                     <div className="flex flex-col gap-3 bg-gray-50 rounded-2xl p-2 justify-center order-first md:order-last">
-                        
+
                         {/* El Afiche (En celu pasa ABAJO con order-last, en PC se acomoda ARRIBA con md:order-first) */}
                         <div className="flex items-center justify-center overflow-hidden order-last md:order-first">
                             <img
@@ -137,7 +141,7 @@ function Evento() {
                                             Falta para votar:
                                         </p>
                                     </div>
-                                    
+
                                     <div className="flex justify-center items-center gap-1.5">
                                         <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[50px] md:min-w-[55px] text-center shadow-md flex flex-col items-center">
                                             <span className="text-lg md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.dias).padStart(2, '0')}</span>

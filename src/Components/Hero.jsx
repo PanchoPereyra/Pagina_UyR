@@ -68,7 +68,13 @@ function Hero() {
                             <div className="bg-[#FFF200] px-4 py-4 font-black text-sm md:text-base text-center w-full rounded-xl shadow-sm text-gray-900 space-y-1">
                                 <p className="tracking-wide text-xs md:text-sm">🗳️ ELECCIONES SOEVER 2026</p>
                                 <p className="text-base md:text-lg">VIERNES 12 DE JUNIO • 08:00 HS</p>
-                                <p className="text-xs md:text-sm font-bold">📍 San Juan y Andrés Pazos — Sindicato SOEVER</p>
+                                <p className="text-xs md:text-sm font-bold">📍 San Juan y Andrés Pazos — Sindicato SOEVER. </p>
+
+    <p className="text-xs md:text-sm font-extrabold text-gray-900 flex items-start gap-2 leading-tight uppercase tracking-wide">
+        
+        <span> ⚠️ Importante: Cada zonal votará en su respectivo lugar de trabajo.</span>
+    </p>
+
                             </div>
 
                             {/* Botón de Google Maps */}
