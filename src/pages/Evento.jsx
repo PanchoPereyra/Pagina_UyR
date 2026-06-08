@@ -82,7 +82,7 @@ function Evento() {
                                     <div className="relative bg-orange-50/70 border-l-4 border-[#E65C23] p-4 rounded-r-2xl shadow-sm my-2">
                                         <span className="absolute top-1 left-2 text-orange-200 text-4xl font-serif select-none pointer-events-none">“</span>
                                         <p className="font-bold italic text-gray-800 text-xs md:text-sm pl-4 leading-relaxed relative z-10">
-                                            La participación de cada compañera y compañero fortalece nuestra organización y nos permite seguir advancing con compromiso, transparencia y trabajo.
+                                            La participación de cada compañera y compañero fortalece nuestra organización y nos permite seguir avanzando con compromiso, transparencia y trabajo.
                                         </p>
                                     </div>
 
