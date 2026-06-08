@@ -358,15 +358,12 @@ function Zonales() {
 
         {/* GRID RESPONSIVE */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-
           {dataZonales.map((zonal) => (
             <div
               key={zonal.id}
               className="relative bg-gradient-to-r from-[#E65C23] to-orange-400 h-48 rounded-2xl shadow-md hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 flex flex-col items-center justify-center gap-3 overflow-hidden group"
             >
-
               {/* ================= MARCA DE AGUA DEL LOGO EN EL FONDO ================= */}
-              {/* Quitamos 'brightness-0 invert' y subimos levemente la opacidad a un 15% (opacity-15) para que el logo original se fusione suavemente con el fondo naranja */}
               <div className="absolute right-[-20px] bottom-[-20px] w-52 h-52 pointer-events-none select-none opacity-25 transform -rotate-12 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0">
                 <img
                   src="/imagenes/logo.png"
@@ -390,11 +387,20 @@ function Zonales() {
                   Ver más <span>→</span>
                 </Link>
               </div>
-
             </div>
           ))}
-
         </div>
+
+        {/* ================= BOTÓN VOLVER ACOMODADO ABAJO Y CENTRADO ================= */}
+        <div className="mt-12 md:mt-16 pt-4">
+          <Link
+            to="/"
+            className="inline-block px-8 py-3 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 hover:scale-105 transition-all duration-200 uppercase text-sm tracking-wider"
+          >
+            Volver al inicio
+          </Link>
+        </div>
+
       </div>
     </section>
   );
