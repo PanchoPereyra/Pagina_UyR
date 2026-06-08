@@ -5,19 +5,19 @@ function LinksInteres() {
     const links = [
         {
             id: 1,
-            titulo: "Reunión de Campaña en Paraná",
-            fecha: "Viernes 5 de Junio - 18:30 hs",
-            descripcion: "Acceso directo a la ubicación del encuentro en Obras Sanitarias (Salta 141). ¡Sumate!",
+            titulo: "Elecciones SOEVER 2026",
+            fecha: "Viernes 12 de junio - 8:00 hs",
+            descripcion: "Es tiempo de participar, de hacer oír nuestra voz y de construir juntos el gremio que queremos. La participación de cada compañera y compañero fortalece nuestra organización y nos permite seguir avanzando con compromiso, transparencia y trabajo. Tu voto cuenta. Tu participación hace la diferencia. - San Juan y Andrés Pazos (Sindicato SOEVER)",
             textoBoton: "Ver Ubicación en Mapa",
-            url: "https://maps.app.goo.gl/cT7wTasWKW6eEMaQ8", 
+            url: "https://www.google.com/maps/search/?api=1&query=Sindicato+SOEVER+San+Juan+Parana"
         },
         {
             id: 2,
             titulo: "Fede Colominas en entrevista con Canal Once",
             fecha: "Actualizado",
             descripcion: "Entrevista Canal Once.",
-            textoBoton: "ver video", 
-            videoUrl: "/video/entrevista-canal-once.mp4", 
+            textoBoton: "ver video",
+            videoUrl: "/video/entrevista-canal-once.mp4",
         },
         {
             id: 3,
@@ -25,7 +25,7 @@ function LinksInteres() {
             fecha: "Elecciones 12 de Junio",
             descripcion: "Verificá de forma segura el lugar y la mesa donde te toca emitir tu voto el próximo viernes.",
             textoBoton: "Consultar Padrón",
-            url: "/doc/padron.pdf", 
+            url: "/doc/padron.pdf",
         },
         {
             id: 4,
@@ -33,7 +33,7 @@ function LinksInteres() {
             fecha: "Audio",
             descripcion: "Fede Colominas en entrevista radio Plaza.",
             textoBoton: "Escuchar Audio",
-            audioUrl: "/audio/entrevista-radio-plaza.mpeg", 
+            audioUrl: "/audio/entrevista-radio-plaza.mpeg",
         },
         {
             id: 5,
@@ -41,7 +41,7 @@ function LinksInteres() {
             fecha: "Audio",
             descripcion: "Fede Colominas en entrevista radio Rubén Lovera.",
             textoBoton: "Escuchar Mensaje",
-            audioUrl: "/audio/fedecolominas.mpeg", 
+            audioUrl: "/audio/fedecolominas.mpeg",
         }
     ];
 
@@ -83,9 +83,9 @@ function LinksInteres() {
                                 {item.audioUrl && (
                                     <div className="w-full mb-4 pt-1">
                                         {/* Usamos directamente la propiedad src en la etiqueta padre para evitar bloqueos de carga */}
-                                        <audio 
+                                        <audio
                                             src={item.audioUrl}
-                                            className="w-full h-10 accent-[#E65C23]" 
+                                            className="w-full h-10 accent-[#E65C23]"
                                             controls
                                             preload="auto"
                                         >
@@ -105,7 +105,7 @@ function LinksInteres() {
                                     onClick={(e) => {
                                         const videoComponent = e.currentTarget.closest('.bg-white').querySelector('video');
                                         if (videoComponent) {
-                                            videoComponent.play().catch(()=>{});
+                                            videoComponent.play().catch(() => { });
                                             if (videoComponent.requestFullscreen) videoComponent.requestFullscreen();
                                             else if (videoComponent.webkitRequestFullscreen) videoComponent.webkitRequestFullscreen();
                                         }
