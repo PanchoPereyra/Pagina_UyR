@@ -40,7 +40,7 @@ function Evento() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                     
-                    {/* COLUMNA IZQUIERDA: Texto y Nota (En celu pasa abajo gracias a order-last, en PC normal) */}
+                    {/* COLUMNA IZQUIERDA: Texto y Nota (En celu pasa abajo, en PC va a la izquierda) */}
                     <div className="flex flex-col justify-between p-2 pb-6 md:pb-2 order-last md:order-first">
                         <div>
                             {/* Cabecera Naranja */}
@@ -52,7 +52,7 @@ function Evento() {
 
                             <div className="px-2 text-gray-900 text-[15px] leading-snug space-y-4">
                                 <p className="font-medium text-gray-700">
-                                    Este viernes 12 de junio, las y los trabajadores tenemos una cita importante con la democracy sindical.
+                                    Este viernes 12 de junio, las y los trabajadores tenemos una cita importante con la democracia sindical.
                                 </p>
 
                                 {/* DATOS CLAVE AMARILLOS */}
@@ -82,7 +82,7 @@ function Evento() {
                                     <div className="relative bg-orange-50/70 border-l-4 border-[#E65C23] p-4 rounded-r-2xl shadow-sm my-2">
                                         <span className="absolute top-1 left-2 text-orange-200 text-4xl font-serif select-none pointer-events-none">“</span>
                                         <p className="font-bold italic text-gray-800 text-xs md:text-sm pl-4 leading-relaxed relative z-10">
-                                            La participación de cada compañera y compañero fortalece nuestra organización y nos permite seguir avanzando con compromiso, transparencia y trabajo.
+                                            La participación de cada compañera y compañero fortalece nuestra organización y nos permite seguir advancing con compromiso, transparencia y trabajo.
                                         </p>
                                     </div>
 
@@ -112,11 +112,11 @@ function Evento() {
                         </div>
                     </div>
 
-                    {/* COLUMNA DERECHA: Afiche + Reloj (En celu se pone arriba con order-first) */}
-                    <div className="flex flex-col gap-2 bg-gray-50 rounded-2xl p-2 justify-center order-first md:order-last">
+                    {/* COLUMNA DERECHA: Afiche + Reloj (Acomodado exactamente como me pediste) */}
+                    <div className="flex flex-col gap-3 bg-gray-50 rounded-2xl p-2 justify-center order-first md:order-last">
                         
-                        {/* El Afiche */}
-                        <div className="flex items-center justify-center overflow-hidden">
+                        {/* El Afiche (En celu pasa ABAJO con order-last, en PC se acomoda ARRIBA con md:order-first) */}
+                        <div className="flex items-center justify-center overflow-hidden order-last md:order-first">
                             <img
                                 src="/imagenes-propuesta/afiche-votacion.jpeg"
                                 alt="Afiche Elecciones"
@@ -124,51 +124,50 @@ function Evento() {
                             />
                         </div>
 
-                        {/* EL RELOJ ESTILO HERO.JSX */}
-                        <div className="bg-white rounded-2xl p-4 border-2 border-[#E65C23] shadow-md flex flex-col sm:flex-row items-center justify-between gap-4">
+                        {/* EL RELOJ (En celu se clava ARRIBA con order-first, en PC vuelve ABAJO con md:order-last) */}
+                        <div className="bg-white rounded-2xl p-4 border-2 border-[#E65C23] shadow-md flex flex-col sm:flex-row items-center justify-between gap-4 order-first md:order-last">
                             {tiempo.terminado ? (
                                 <p className="text-[#E65C23] font-black uppercase text-sm animate-pulse py-2 text-center w-full">
                                     ¡Los comicios han comenzado! 🗳️
                                 </p>
                             ) : (
                                 <>
-                                    {/* Texto de la izquierda */}
                                     <div className="text-center sm:text-left">
-                                        <p className="text-[#E65C23] font-black uppercase text-base md:text-lg tracking-wider">
+                                        <p className="text-[#E65C23] font-black uppercase text-sm md:text-base tracking-wider">
                                             Falta para votar:
                                         </p>
                                     </div>
                                     
-                                    {/* Grilla de números */}
-                                    <div className="flex justify-center items-center gap-2">
-                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.dias).padStart(2, '0')}</span>
-                                            <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Días</span>
+                                    <div className="flex justify-center items-center gap-1.5">
+                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[50px] md:min-w-[55px] text-center shadow-md flex flex-col items-center">
+                                            <span className="text-lg md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.dias).padStart(2, '0')}</span>
+                                            <span className="text-[8px] font-bold uppercase text-gray-400 tracking-wide">Días</span>
                                         </div>
-                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.horas).padStart(2, '0')}</span>
-                                            <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Horas</span>
+                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[50px] md:min-w-[55px] text-center shadow-md flex flex-col items-center">
+                                            <span className="text-lg md:text-2xl font-black text-white leading-tight">{String(tiempo.horas).padStart(2, '0')}</span>
+                                            <span className="text-[8px] font-bold uppercase text-gray-400 tracking-wide">Hrs</span>
                                         </div>
-                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.minutos).padStart(2, '0')}</span>
-                                            <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Min</span>
+                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[50px] md:min-w-[55px] text-center shadow-md flex flex-col items-center">
+                                            <span className="text-lg md:text-2xl font-black text-white leading-tight">{String(tiempo.minutos).padStart(2, '0')}</span>
+                                            <span className="text-[8px] font-bold uppercase text-gray-400 tracking-wide">Min</span>
                                         </div>
-                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight animate-pulse">{String(tiempo.segundos).padStart(2, '0')}</span>
-                                            <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Seg</span>
+                                        <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[50px] md:min-w-[55px] text-center shadow-md flex flex-col items-center">
+                                            <span className="text-lg md:text-2xl font-black text-[#E65C23] leading-tight animate-pulse">{String(tiempo.segundos).padStart(2, '0')}</span>
+                                            <span className="text-[8px] font-bold uppercase text-gray-400 tracking-wide">Seg</span>
                                         </div>
                                     </div>
                                 </>
                             )}
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-            {/* BOTÓN DE RETORNO */}
-            <Link to="/" className="px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition">
+            {/* BOTÓN VOLVER */}
+            <Link to="/" className="px-8 py-2.5 bg-[#E65C23] text-white font-bold rounded-lg shadow hover:bg-orange-600 transition">
                 Volver al inicio
             </Link>
         </div>
