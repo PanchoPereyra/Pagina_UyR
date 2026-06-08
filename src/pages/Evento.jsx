@@ -37,11 +37,11 @@ function Evento() {
 
             {/* Contenedor principal 2 columnas */}
             <div className="bg-white w-full max-w-4xl rounded-[30px] shadow-xl overflow-hidden border border-gray-200 p-2 md:p-4">
-
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-
-                    {/* COLUMNA IZQUIERDA: Texto y Nota */}
-                    <div className="flex flex-col justify-between p-2 pb-6 md:pb-2">
+                    
+                    {/* COLUMNA IZQUIERDA: Texto y Nota (En celu pasa abajo gracias a order-last, en PC normal) */}
+                    <div className="flex flex-col justify-between p-2 pb-6 md:pb-2 order-last md:order-first">
                         <div>
                             {/* Cabecera Naranja */}
                             <div className="bg-[#E65C23] text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6 px-4">
@@ -52,7 +52,7 @@ function Evento() {
 
                             <div className="px-2 text-gray-900 text-[15px] leading-snug space-y-4">
                                 <p className="font-medium text-gray-700">
-                                    Este viernes 12 de junio, las y los trabajadores tenemos una cita importante con la democracia sindical.
+                                    Este viernes 12 de junio, las y los trabajadores tenemos una cita importante con la democracy sindical.
                                 </p>
 
                                 {/* DATOS CLAVE AMARILLOS */}
@@ -112,9 +112,9 @@ function Evento() {
                         </div>
                     </div>
 
-                    {/* COLUMNA DERECHA: Afiche + Reloj Estilo Hero (Blanco con borde naranja) */}
-                    <div className="flex flex-col gap-2 bg-gray-50 rounded-2xl p-2 justify-center">
-
+                    {/* COLUMNA DERECHA: Afiche + Reloj (En celu se pone arriba con order-first) */}
+                    <div className="flex flex-col gap-2 bg-gray-50 rounded-2xl p-2 justify-center order-first md:order-last">
+                        
                         {/* El Afiche */}
                         <div className="flex items-center justify-center overflow-hidden">
                             <img
@@ -138,38 +138,23 @@ function Evento() {
                                             Falta para votar:
                                         </p>
                                     </div>
-
-                                    {/* Grilla de números individuales negros a la derecha */}
+                                    
+                                    {/* Grilla de números */}
                                     <div className="flex justify-center items-center gap-2">
-                                        {/* Días */}
                                         <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">
-                                                {String(tiempo.dias).padStart(2, '0')}
-                                            </span>
+                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.dias).padStart(2, '0')}</span>
                                             <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Días</span>
                                         </div>
-
-                                        {/* Horas */}
                                         <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">
-                                                {String(tiempo.horas).padStart(2, '0')}
-                                            </span>
+                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.horas).padStart(2, '0')}</span>
                                             <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Horas</span>
                                         </div>
-
-                                        {/* Minutos */}
                                         <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">
-                                                {String(tiempo.minutos).padStart(2, '0')}
-                                            </span>
+                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight">{String(tiempo.minutos).padStart(2, '0')}</span>
                                             <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Min</span>
                                         </div>
-
-                                        {/* Segundos */}
                                         <div className="bg-[#111827] text-white rounded-xl p-2 min-w-[55px] text-center shadow-md flex flex-col items-center">
-                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight animate-pulse">
-                                                {String(tiempo.segundos).padStart(2, '0')}
-                                            </span>
+                                            <span className="text-xl md:text-2xl font-black text-[#E65C23] leading-tight animate-pulse">{String(tiempo.segundos).padStart(2, '0')}</span>
                                             <span className="text-[9px] font-bold uppercase text-gray-400 tracking-wide mt-0.5">Seg</span>
                                         </div>
                                     </div>
@@ -177,10 +162,12 @@ function Evento() {
                             )}
                         </div>
                     </div>
+
                 </div>
+
             </div>
 
-            {/* BOTÓN VOLVER */}
+            {/* BOTÓN DE RETORNO */}
             <Link to="/" className="px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition">
                 Volver al inicio
             </Link>
