@@ -20,7 +20,7 @@ function Imagenes1() {
         "/imagenes1/foto1.jpg", 
         "/imagenes1/foto2.jpg",
         "/imagenes1/foto3.PNG",
-        "imagenes/imagenes1/foto1.jpg",
+        // "imagenes/imagenes1/foto1.jpg",
     ];
 
     return (

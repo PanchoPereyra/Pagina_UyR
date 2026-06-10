@@ -7,11 +7,9 @@ function LaPaz() {
     const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 
     // Tu lista de fotos
-
-            const listaFotos = [
+    const listaFotos = [
         "/imagenes/lapaz/lista.jpeg",
     ];
-
 
     return (
         <section className="bg-white min-h-screen py-10 px-4">

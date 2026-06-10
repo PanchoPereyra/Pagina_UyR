@@ -84,4 +84,4 @@ function Parana() {
     )
 }
 
-export default Parana;
+export default Parana

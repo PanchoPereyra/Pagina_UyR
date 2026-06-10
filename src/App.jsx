@@ -8,6 +8,8 @@
 // import Imagenes2 from "./pages/Imagenes2"
 //import Galeria from "./Components/Galeria"
 
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 // import Jubilados from "./Components/Jubilados"
 import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
@@ -49,7 +51,7 @@ import Parana from "./pages/Parana"
 
 import NotFound from "./pages/NotFound"
 
-
+import { Analytics } from '@vercel/analytics/react'
 
 
 function App() {
@@ -114,7 +116,8 @@ function App() {
       {/* <Galeria/> */}
 
       <Footer />
-
+      <Analytics />
+      <SpeedInsights />
     </>
   )
 }
