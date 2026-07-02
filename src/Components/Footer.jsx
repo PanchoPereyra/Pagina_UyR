@@ -7,7 +7,7 @@ function Footer() {
     // <footer >
     //   <div class="bg-orange-600/65">
     //     <div class="max-w-6xl mx-auto px-6 gap-8 flex justify-evenly">
-    <footer class="bg-[#E65C23] text-white">
+    <footer class=" text-white">
       <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
 
         {/*COLUMNA 1 - DESCRIPCION */}
@@ -21,8 +21,8 @@ function Footer() {
             </div>
           </div> */}
         <div class="text-center md:text-left md:w-1/2">
-          <h2 class="text-xl font-semibold mb-3 text-gray-950">Unión y Renovación</h2>
-          <p class="text-sm leading-relaxed text-gray-950">
+          <h2 class="text-xl font-semibold mb-3">Unión y Renovación</h2>
+          <p class="text-sm leading-relaxed text-yellow-400">
             Unidos por la defensa de los derechos laborales y el bienestar de todos los trabajadores.
             Juntos construimos un futuro más justo.
           </p>
@@ -90,8 +90,8 @@ function Footer() {
           © 2025 Todos los derechos reservados.
         </div> */}
       <hr class="border-gray-950 mx-6" />
-      <div class="text-center text-xs py-4 text-gray-950">
-        © 2025 Todos los derechos reservados.
+      <div class="text-center text-xs py-4 text-yellow-400">
+        © 2025 Todos los derechos reservados - SIGMA Ingeniería.
       </div>
 
 

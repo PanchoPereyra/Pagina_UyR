@@ -4,9 +4,9 @@
 function Header() {
     return (
 
-        <header className="bg-[#E65C23] pt-10 pb-10 flex justify-center">
+        <header className="pt-10 pb-10 flex justify-center">
             <div class="">
-                <h1 class="text-black md:text-8xl font-bold">Unión y Renovación</h1>
+                <h1 class="md:text-8xl font-bold">Unión y Renovación</h1>
             </div>
         </header>
     )

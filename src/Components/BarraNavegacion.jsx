@@ -3,114 +3,112 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom"; 
 
 function BarraNavegacion() {
-    // Clases dinámicas para los enlaces de CELULAR
-    const claseCelular = ({ isActive }) => 
-        `py-1.5 px-0.5 rounded-lg transition-all ${
-            isActive 
-                ? "bg-orange-50 text-[#E65C23] font-extrabold" 
-                : "text-gray-800 hover:bg-orange-50/50"
-        }`;
-
-    // Clases dinámicas para los enlaces de COMPUTADORA
-    const clasePC = ({ isActive }) => 
-        `px-4 py-2 rounded-xl transition-all duration-200 ${
-            isActive 
-                ? "bg-orange-50 text-[#E65C23] font-extrabold shadow-sm" 
-                : "text-gray-800 hover:bg-orange-50 hover:text-[#E65C23]"
-        }`;
+// Clases dinámicas para los enlaces de CELULAR con borde amarillo en hover
+// Enlaces de CELULAR: solo estructura básica, el color lo maneja el index.css
+const claseCelular = ({ isActive }) => 
+    `py-1.5 px-2 rounded-lg border text-center block w-full transition-all duration-200 font-bold ${
+        isActive 
+            ? "!bg-yellow-500 !text-black !border-yellow-500 shadow-md" 
+            : "!bg-transparent !text-neutral-400 !border-transparent hover:!bg-yellow-500 hover:!text-black hover:!border-yellow-500"
+    }`;
+    // Clases dinámicas para los enlaces de COMPUTADORA (Match exacto con la foto)
+    // Clases dinámicas para los enlaces de COMPUTADORA con borde amarillo en hover
+// Enlaces de COMPUTADORA: solo estructura básica
+const clasePC = "px-4 py-2 rounded-xl border border-transparent transition-all duration-200 hover:bg-yellow-500 text-black";
 
     return (
-        <header className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b-2 border-[#E65C23] shadow-md transition-all">
+        <header className="bg-black sticky top-0 z-50 border-b border-neutral-800 transition-all">
             
             {/* =========================================================================
-                1. VISTA PARA CELULARES (Grid en 2 filas fijas)
+                1. VISTA PARA CELULARES (Grid en 2 filas fijas sobre fondo negro)
                ========================================================================= */}
             <div className="block md:hidden">
                 {/* LOGO Y TEXTO COMPACTO */}
-                <div className="px-4 pt-3 pb-2 border-b border-gray-100 flex items-center justify-center gap-3">
+                <div className="px-4 pt-3 pb-2 border-b border-neutral-900 flex items-center justify-center gap-3">
                     <img 
                         src="/imagenes/logo.png" 
-                        alt="Logo Unión y Renovación" 
+                        alt="Logo SOEVER" 
                         className="w-12 h-12 object-contain flex-shrink-0"
                     />
                     <div className="flex flex-col justify-center text-left">
-                        <h1 className="text-base font-black text-black uppercase tracking-tight leading-tight">
-                            Unión y Renovación
+                        <h1 className="text-4xl font-black text-yellow-400 uppercase tracking-tight leading-tight">
+                            S.O.E.V.E.R.
                         </h1>
-                        <p className="text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                            SOEVER Lista 1
+                        <p className="text-[9px] font-bold text-yellow-400 uppercase tracking-widest">
+                            Sindicato Empleados Viales de Entre Ríos
                         </p>
                     </div>
                 </div>
 
                 {/* MENÚ EN DOS FILAS EXACTAS CON DETECCIÓN ACTIVA */}
-                <div className="bg-gray-50/50 px-2 py-2">
+                <div className="bg-black px-2 py-2">
                     <nav className="grid grid-cols-4 gap-1 text-center text-xs font-bold">
                         <NavLink to="/" className={claseCelular}>Inicio</NavLink>
-                        <NavLink to="/propuestas" className={claseCelular}>Propuestas</NavLink> 
-                        <NavLink to="/eventos" className={claseCelular}>Eventos</NavLink>
-                        <NavLink to="/jubilados" className={claseCelular}>Jubilados</NavLink>
-                        <NavLink to="/sindicato" className={claseCelular}>Sindicato</NavLink>
-                        <NavLink to="/linksinteres" className={claseCelular}>Enlaces de Interés</NavLink>
-                        <NavLink to="/zonales" className={claseCelular}>Zonales</NavLink>
-                        <NavLink to="/obrasocial" className={claseCelular}>Obra Social</NavLink>
+                        <NavLink to="/noticias" className={claseCelular}>Noticias</NavLink> 
+                        <NavLink to="/eventos" className={claseCelular}>Nosotros</NavLink>
+                        <NavLink to="/jubilados" className={claseCelular}>Beneficios</NavLink>
+                        <NavLink to="/sindicato" className={claseCelular}>Afiliación</NavLink>
+                        <NavLink to="/linksinteres" className={claseCelular}>Documentos</NavLink>
+                        <NavLink to="/zonales" className={claseCelular}>Contacto</NavLink>
+                        {/* <NavLink to="/obrasocial" className={claseCelular}>Obra Social</NavLink> */}
                     </nav>
                     
                     {/* Botón Lista 1 centrado abajo en el celu */}
-                    <div className="flex justify-center mt-2 px-2">
-                        <Link to="/lista" className="w-full text-center bg-[#E65C23] text-white py-1.5 rounded-lg font-black text-xs uppercase tracking-wider shadow-sm active:bg-orange-600">
+                    {/* <div className="flex justify-center mt-2 px-2">
+                        <Link to="/lista" className="w-full text-center bg-yellow-500 text-black py-1.5 rounded-lg font-black text-xs uppercase tracking-wider shadow-sm active:bg-yellow-600">
                             Lista 1
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
             {/* =========================================================================
-                2. VISTA PARA COMPUTADORAS (Enlaces dinámicos alineados)
+                2. VISTA PARA COMPUTADORAS (Enlaces dinámicos alineados estilo oscuro)
                ========================================================================= */}
             <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
                 <div className="flex justify-center items-center">
-                    <nav className="flex flex-wrap justify-center items-center gap-x-1 gap-y-2 text-base sm:text-lg font-bold">
+                    <nav className="flex flex-wrap justify-center items-center gap-x-1 gap-y-2 text-base font-bold">
+                        
                         
                         <NavLink to="/" className={clasePC}>
                             Inicio
                         </NavLink>
 
-                        <NavLink to="/propuestas" className={clasePC}>
-                            Propuestas
+                        <NavLink to="/noticias" className={clasePC}>
+                            Noticias
                         </NavLink> 
 
                         <NavLink to="/eventos" className={clasePC}>
-                            Eventos
+                            Nosotros
                         </NavLink>
 
                         <NavLink to="/jubilados" className={clasePC}>
-                            Jubilados
+                            Beneficios
                         </NavLink>
 
                         <NavLink to="/sindicato" className={clasePC}>
-                            Sindicato
+                            Afiliación
                         </NavLink>
 
                         <NavLink to="/linksinteres" className={clasePC}>
-                            Enlaces de interés
+                            Documentos
                         </NavLink>
 
                         <NavLink to="/zonales" className={clasePC}>
-                            Zonales
+                            Contacto
                         </NavLink>
 
-                        <NavLink to="/obrasocial" className={clasePC}>
+                        {/* <NavLink to="/obrasocial" className={clasePC}>
                             Obra Social
-                        </NavLink>
+                        </NavLink> */}
 
-                        {/* Botón Lista 1 destacado al final */}
-                        <Link 
+                        {/* Botón Lista 1 destacado al final (Amarillo con letras negras) */}
+                        {/* <Link 
                             to="/lista" 
-                            className="ml-3 px-5 py-2 bg-[#E65C23] text-white rounded-xl font-black text-sm uppercase tracking-wider shadow-sm hover:bg-orange-600 hover:shadow-md hover:scale-105 transition-all duration-200"
+                            className="ml-3 px-5 py-2 bg-yellow-500 text-black rounded-xl font-black text-sm uppercase tracking-wider shadow-sm hover:bg-yellow-400 hover:shadow-md hover:scale-105 transition-all duration-200"
                         >
                             Lista 1
-                        </Link>
+                        </Link> */}
 
                     </nav>
                 </div>

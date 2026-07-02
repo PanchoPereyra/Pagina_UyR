@@ -1,14 +1,50 @@
-/* ACA SE DECLARAN CARACTERISTICAS GLOBALES */
 @import "tailwindcss";
 
-body{
+/* 1. CONFIGURACIÓN GLOBAL */
+html, 
+body, 
+#root {
   margin: 0;
-  background-color: #f4f0eb;
-  /* color: orange */
+  padding: 0;
+  background-color: #000000 !important;
+  color: #d4d4d8 !important;
+  font-family: 'Roboto', sans-serif;
 }
 
-@theme {
-  --font-family: "Roboto", sans-serif;
+h1, h2, h3, h4 {
+  color: #facc15 !important;
 }
 
+/* 2. ENLACES DEL MENÚ (REGLAS DE COLOR FIJAS) */
+a {
+  color: #a1a1aa !important; /* Gris por defecto para todos */
+  transition: all 0.2s ease;
+}
 
+/* Cuando pasás el mouse por encima (Hover) */
+a:hover {
+  color: #facc15 !important; /* Texto amarillo */
+}
+
+/* CUANDO HACÉS CLIC (Página Activa de React Router) */
+a.active {
+  /* color: #facc15 !important;            FUERZA EL TEXTO EN AMARILLO */
+  background-color: #171717 !important;  /* Fondo gris oscuro */
+  border-color: #facc15 !important;      /* Borde amarillo */
+}
+
+/* ==========================================================
+   3. REGLA EXCLUSIVA PARA EL BOTÓN DE VOLVER (ESTILO VIAL)
+   ========================================================== */
+.btn-volver {
+  background-color: #000000 !important;   /* Fondo negro normal */
+  color: #facc15 !important;              /* Texto amarillo normal */
+  border: 1px solid #facc15 !important;   /* Borde amarillo normal */
+}
+
+/* Cuando pasás el mouse sobre este botón en específico */
+.btn-volver:hover {
+  background-color: #facc15 !important;   /* El fondo pasa a amarillo completo */
+  color: #000000 !important;              /* El texto pasa a negro puro */
+  border-color: #facc15 !important;
+}

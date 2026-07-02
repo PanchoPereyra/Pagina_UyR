@@ -2,12 +2,8 @@
 import Hero from "../Components/Hero"
 import Lista from "../Components/Lista"
 import Header from "../Components/Header"
-// import Eslogan from "../Components/__Eslogan"
-// import Novedades from "../Components/Novedades"
-// import Jubilados from "../Components/Jubilados"
 import ProximosEventos from "../Components/ProximosEventos"
-// import Galeria from "../Components/Galeria"
-
+import Noticias from "./Noticias"
 
 
 
@@ -15,17 +11,12 @@ import ProximosEventos from "../Components/ProximosEventos"
 function Home() {
     return (
         <div>
-
+            {/* Aca va lo que se muestra en la pantalla "inicio" */}
             <Hero />
             <Lista />
             <Header />
-            {/* <Eslogan /> */}
-            {/* <Novedades/> */}
-            {/* <Jubilados /> */}
+            <Noticias/>
             <ProximosEventos/>
-            {/* <Galeria /> */}
-            {/* <Evento /> */}
-
         </div>
     )
 }
